@@ -155,7 +155,7 @@ def checkIfFIleExists():
                     logging.info(f"TIMING: Time taken to process {file_name} is {end-start}")
                 else:
                     logging.info("all validations completed successfully. Now moving the file to staging environments.")
-                    move_file_to_staging("./staging/")
+                    move_file_to_staging("../staging/")
                     shutil.rmtree(path+temp_client_folder)
                     end = time.time()
                     logging.info(f"TIMING: Time taken to process {file_name} is {end-start}")
