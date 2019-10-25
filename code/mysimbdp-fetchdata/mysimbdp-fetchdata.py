@@ -5,9 +5,10 @@ import json
 import logging
 import re
 import shutil
+import time 
 
 custom_logging_format = '%(asctime)s : [%(levelname)s] - %(message)s'
-logging.basicConfig(filename= "./logs/mysimbdp_fetchData.log" , filemode="a", level= logging.INFO, format=custom_logging_format)
+logging.basicConfig(filename= "../../logs/mysimbdp_fetchData.log" , filemode="a", level= logging.INFO, format=custom_logging_format)
 
 
 isProcessingFile = False
@@ -82,7 +83,7 @@ def client_validations(fileName, path):
 
         temp_client_folder = "client_1_temp/"
         client_name = "comp_1"
-        if bool(company_1_config["Allow_Split"]) and int(company_1_config["Block_size"]) < getsize(path + fileName):
+        if company_1_config["Allow_Split"] == "True" and int(company_1_config["Block_size"]) < getsize(path + fileName):
             # it means we need to split the file before transferring (micro-batching)            
             split_file(path + fileName, path + temp_client_folder, company_1_config["Block_size"], client_name)
         else:
@@ -99,7 +100,7 @@ def client_validations(fileName, path):
             return 1
         temp_client_folder = "client_2_temp/"
         client_name = "comp_2"
-        if bool(company_2_config["Allow_Split"]) and int(company_2_config["Block_size"]) < getsize(path + fileName):
+        if company_2_config["Allow_Split"] == "True" and int(company_2_config["Block_size"]) < getsize(path + fileName):
             # it means we need to split the file before transferring (micro-batching)
             logging.info("Splitting the files in small batches.")
             split_file(path + fileName, path + temp_client_folder, company_2_config["Block_size"], client_name)
@@ -122,30 +123,49 @@ def move_file_to_staging(staging_location):
         logging.info(f"successfully moved file {fileName}")
     return 0
 
+def move_file_to_discard(filePath, discarded_location, fileName):
+    shutil.move(filePath, discarded_location+fileName)
+    return 0
 
-if does_file_exist_in_dir(path):
-    isProcessingFile = True
-    do_validation_on_Files
-    files = listdir(path)
+def checkIfFIleExists():
+    if does_file_exist_in_dir(path):
+        do_validation_on_Files
+        files = listdir(path)
 
-    for file_name in files:
-        #We are doing a custom log adapter for python. This ensures the file name are always printed automatically
-        filePath = path + file_name
-        # do validations
-        error_list = do_validation_on_Files(filePath)
-        if len(error_list) > 0:
-            print(error_list)
-            logging.warning(f"Ignoring {file_name}! It was not accepted due to following errors: {', '.join(error_list)}")
-        else:
-            logging.info(f"File {file_name} has passed the generic validation checks")
-            logging.info("Now starting client specific checks.")
-            result_code = client_validations(file_name, path)
-            if result_code == 1:
-                logging.warning("Moving the file to discarded directory!")
+        for file_name in files:
+            start = time.time()
+            # We are doing a custom log adapter for python. This ensures the file name are always printed automatically
+            filePath = path + file_name
+            # do validations
+            error_list = do_validation_on_Files(filePath)
+            if len(error_list) > 0:
+                print(error_list)
+                logging.warning(f"Ignoring {file_name}! It was not accepted due to following errors: {', '.join(error_list)}.")
+                move_file_to_discard(filePath, "./discarded", file_name)
+                end = time.time()
+                logging.info(f"TIMING: Time taken to process {file_name} is {end-start}")
             else:
-                logging.info("all validations completed successfully. Now moving the file to staging environments.")
-                move_file_to_staging("./staging/")
-                shutil.rmtree(path+temp_client_folder)
+                logging.info(f"File {file_name} has passed the generic validation checks")
+                logging.info("Now starting client specific checks.")
+                result_code = client_validations(file_name, path)
+                if result_code == 1:
+                    logging.warning("Moving the file to discarded directory!")
+                    move_file_to_discard(filePath, "./discarded", file_name)
+                    end = time.time()
+                    logging.info(f"TIMING: Time taken to process {file_name} is {end-start}")
+                else:
+                    logging.info("all validations completed successfully. Now moving the file to staging environments.")
+                    move_file_to_staging("./staging/")
+                    shutil.rmtree(path+temp_client_folder)
+                    end = time.time()
+                    logging.info(f"TIMING: Time taken to process {file_name} is {end-start}")
+ 
+
+#checks the folder for new file every second
+while True:
+    checkIfFIleExists()
+    time.sleep(1)
+
 
 
 
