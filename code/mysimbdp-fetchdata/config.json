@@ -1,0 +1,17 @@
+{
+    "Max_file_size" : 10000000,
+    "Max_filename_length" : 20,
+    "Company_1_Profile" :  
+        {
+            "File_Regex" : "Com_1.*",
+            "Allow_Split" : "True",
+            "Block_size" : 1000000,
+            "Accepted_formats" : "txt,csv"
+        },
+    "Company_2_Profile": 
+        {
+            "File_Regex" : "Com_2.*",
+            "Allow_Split" : "False",
+            "Accepted_formats" : "txt,log,csv"
+        }    
+}

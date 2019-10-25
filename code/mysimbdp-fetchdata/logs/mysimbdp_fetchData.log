@@ -1,0 +1,87 @@
+2019-10-19 20:05:38,282 : [INFO] - File abc1.txt has passed the generic validation checks
+2019-10-19 20:05:38,282 : [INFO] - now starting client specific checks.
+2019-10-19 20:05:38,283 : [WARNING] - the file did not match any regex of any company profile
+2019-10-19 20:05:38,284 : [INFO] - File abc2.txt has passed the generic validation checks
+2019-10-19 20:05:38,284 : [INFO] - now starting client specific checks.
+2019-10-19 20:05:38,284 : [WARNING] - the file did not match any regex of any company profile
+2019-10-19 20:07:33,818 : [INFO] - File abc1.txt has passed the generic validation checks
+2019-10-19 20:07:33,819 : [INFO] - now starting client specific checks.
+2019-10-19 20:07:33,820 : [WARNING] - the file did not match any regex of any company profile
+2019-10-19 20:07:33,820 : [INFO] - File abc2.txt has passed the generic validation checks
+2019-10-19 20:07:33,820 : [INFO] - now starting client specific checks.
+2019-10-19 20:07:33,821 : [WARNING] - the file did not match any regex of any company profile
+2019-10-19 20:07:33,821 : [INFO] - File Com_1_rohit.txt has passed the generic validation checks
+2019-10-19 20:07:33,821 : [INFO] - now starting client specific checks.
+2019-10-19 20:07:33,822 : [INFO] - valid company 1 match found
+2019-10-19 20:09:01,849 : [INFO] - File abc1.txt has passed the generic validation checks
+2019-10-19 20:09:01,849 : [INFO] - now starting client specific checks.
+2019-10-19 20:09:01,850 : [WARNING] - the file did not match any regex of any company profile
+2019-10-19 20:09:01,850 : [INFO] - File abc2.txt has passed the generic validation checks
+2019-10-19 20:09:01,851 : [INFO] - now starting client specific checks.
+2019-10-19 20:09:01,851 : [WARNING] - the file did not match any regex of any company profile
+2019-10-19 20:09:01,851 : [INFO] - File Com_1_rohit.txt has passed the generic validation checks
+2019-10-19 20:09:01,852 : [INFO] - now starting client specific checks.
+2019-10-19 20:09:01,852 : [INFO] - File name Com_1_rohit.txt matches with Company 1's profile.
+2019-10-19 20:09:01,852 : [INFO] - starting company 1 checks before moving the file
+2019-10-19 21:40:20,807 : [INFO] - File abc1.txt has passed the generic validation checks
+2019-10-19 21:40:20,807 : [INFO] - Now starting client specific checks.
+2019-10-19 21:40:20,808 : [WARNING] - The file did not match any regex of any client's profile. Hence cannot be processed.
+2019-10-19 21:40:20,808 : [WARNING] - Moving the file to discarded directory!
+2019-10-19 21:40:20,808 : [INFO] - File abc2.txt has passed the generic validation checks
+2019-10-19 21:40:20,809 : [INFO] - Now starting client specific checks.
+2019-10-19 21:40:20,809 : [WARNING] - The file did not match any regex of any client's profile. Hence cannot be processed.
+2019-10-19 21:40:20,809 : [WARNING] - Moving the file to discarded directory!
+2019-10-19 21:40:20,810 : [INFO] - File Com_1_rohit.txt has passed the generic validation checks
+2019-10-19 21:40:20,810 : [INFO] - Now starting client specific checks.
+2019-10-19 21:40:20,810 : [INFO] - File name Com_1_rohit.txt matches with Company 1's profile.
+2019-10-19 21:40:20,810 : [INFO] - starting company 1 checks before moving the file
+2019-10-19 21:40:20,811 : [INFO] - all validations completed successfully. Now moving the file to staging environments.
+2019-10-19 21:44:04,582 : [INFO] - File Com_1_rohit.txt has passed the generic validation checks
+2019-10-19 21:44:04,582 : [INFO] - Now starting client specific checks.
+2019-10-19 21:44:04,583 : [INFO] - File name Com_1_rohit.txt matches with Company 1's profile.
+2019-10-19 21:44:04,583 : [INFO] - starting company 1 checks before moving the file
+2019-10-19 21:44:04,584 : [INFO] - all validations completed successfully. Now moving the file to staging environments.
+2019-10-19 21:45:23,579 : [INFO] - File Com_1_rohit.txt has passed the generic validation checks
+2019-10-19 21:45:23,579 : [INFO] - Now starting client specific checks.
+2019-10-19 21:45:23,580 : [INFO] - File name Com_1_rohit.txt matches with Company 1's profile.
+2019-10-19 21:45:23,580 : [INFO] - starting company 1 checks before moving the file
+2019-10-19 21:45:23,580 : [INFO] - all validations completed successfully. Now moving the file to staging environments.
+2019-10-19 22:04:50,990 : [INFO] - File Com_1_rohit.txt has passed the generic validation checks
+2019-10-19 22:04:50,990 : [INFO] - Now starting client specific checks.
+2019-10-19 22:04:50,990 : [INFO] - File name Com_1_rohit.txt matches with Company 1's profile.
+2019-10-19 22:04:50,990 : [INFO] - starting company 1 checks before moving the file
+2019-10-19 22:04:50,991 : [INFO] - all validations completed successfully. Now moving the file to staging environments.
+2019-10-19 22:04:50,991 : [INFO] - successfully moved file 2 
+2019-10-19 22:06:55,533 : [INFO] - File Com_1_rohit.txt has passed the generic validation checks
+2019-10-19 22:06:55,533 : [INFO] - Now starting client specific checks.
+2019-10-19 22:06:55,533 : [INFO] - File name Com_1_rohit.txt matches with Company 1's profile.
+2019-10-19 22:06:55,533 : [INFO] - starting company 1 checks before moving the file
+2019-10-19 22:06:55,533 : [INFO] - all validations completed successfully. Now moving the file to staging environments.
+2019-10-19 22:08:39,001 : [INFO] - File Com_1_rohit.txt has passed the generic validation checks
+2019-10-19 22:08:39,001 : [INFO] - Now starting client specific checks.
+2019-10-19 22:08:39,001 : [INFO] - File name Com_1_rohit.txt matches with Company 1's profile.
+2019-10-19 22:08:39,001 : [INFO] - starting company 1 checks before moving the file
+2019-10-19 22:08:39,001 : [INFO] - all validations completed successfully. Now moving the file to staging environments.
+2019-10-19 22:11:38,964 : [INFO] - File Com_1_rohit.txt has passed the generic validation checks
+2019-10-19 22:11:38,964 : [INFO] - Now starting client specific checks.
+2019-10-19 22:11:38,964 : [INFO] - File name Com_1_rohit.txt matches with Company 1's profile.
+2019-10-19 22:11:38,964 : [INFO] - starting company 1 checks before moving the file
+2019-10-19 22:11:38,964 : [INFO] - all validations completed successfully. Now moving the file to staging environments.
+2019-10-19 22:11:38,964 : [INFO] - successfully moved file client_1_temp
+2019-10-19 22:13:57,242 : [INFO] - File Com_1_rohit.txt has passed the generic validation checks
+2019-10-19 22:13:57,242 : [INFO] - Now starting client specific checks.
+2019-10-19 22:13:57,242 : [INFO] - File name Com_1_rohit.txt matches with Company 1's profile.
+2019-10-19 22:13:57,242 : [INFO] - starting company 1 checks before moving the file
+2019-10-19 22:13:57,243 : [INFO] - all validations completed successfully. Now moving the file to staging environments.
+2019-10-19 22:13:57,244 : [INFO] - successfully moved file Com_1_rohit.txt
+2019-10-19 22:14:19,683 : [INFO] - File Com_1_rohit.txt has passed the generic validation checks
+2019-10-19 22:14:19,683 : [INFO] - Now starting client specific checks.
+2019-10-19 22:14:19,683 : [INFO] - File name Com_1_rohit.txt matches with Company 1's profile.
+2019-10-19 22:14:19,683 : [INFO] - starting company 1 checks before moving the file
+2019-10-19 22:14:19,683 : [INFO] - all validations completed successfully. Now moving the file to staging environments.
+2019-10-19 22:16:26,256 : [INFO] - File Com_1_rohit.txt has passed the generic validation checks
+2019-10-19 22:16:26,256 : [INFO] - Now starting client specific checks.
+2019-10-19 22:16:26,256 : [INFO] - File name Com_1_rohit.txt matches with Company 1's profile.
+2019-10-19 22:16:26,256 : [INFO] - starting company 1 checks before moving the file
+2019-10-19 22:16:26,256 : [INFO] - all validations completed successfully. Now moving the file to staging environments.
+2019-10-19 22:16:26,257 : [INFO] - successfully moved file Com_1_rohit.txt
