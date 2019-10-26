@@ -6,6 +6,7 @@ import logging
 import re
 import shutil
 import time 
+import traceback
 
 custom_logging_format = '%(asctime)s : [%(levelname)s] - %(message)s'
 logging.basicConfig(filename= "../../logs/mysimbdp_fetchData.log" , filemode="a", level= logging.INFO, format=custom_logging_format)
@@ -162,10 +163,12 @@ def checkIfFIleExists():
  
 
 #checks the folder for new file every second
-while True:
-    checkIfFIleExists()
-    time.sleep(1)
-
+try:
+    while True:
+        checkIfFIleExists()
+        time.sleep(1)
+except Exception as e:
+    logging.error(traceback.format_exc())
 
 
 
