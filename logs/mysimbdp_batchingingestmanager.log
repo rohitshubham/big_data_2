@@ -1,0 +1,145 @@
+2019-10-27 17:50:12,152 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 17:50:34,993 : [INFO] - Received ingestion message for clientID: <built-in method decode of bytes object at 0x7f6439487600>. Proceeding to call respective client script.
+2019-10-27 17:53:07,363 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 17:53:13,407 : [INFO] - Received ingestion message for clientID: <built-in method decode of bytes object at 0x7fa3701cf330>. Proceeding to call respective client script.
+2019-10-27 17:54:26,516 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 17:54:32,050 : [INFO] - Received ingestion message for clientID: Hello world!. Proceeding to call respective client script.
+2019-10-27 17:56:59,912 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 17:57:07,290 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 17:57:07,291 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 17:57:20,883 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "/home/rohit/Documents/big_data_2/assignment-02-801636/code/mysimbdp-batchingestmanager/mysimbdp-batchingestmanager.py", line 33, in call_relevent_client_application
+    subprocess.Popen("python3", "",file_to_run)
+  File "/usr/lib/python3.6/subprocess.py", line 629, in __init__
+    raise TypeError("bufsize must be an integer")
+TypeError: bufsize must be an integer
+
+2019-10-27 17:58:10,385 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 17:58:14,103 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 17:58:14,104 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 17:58:17,902 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "/home/rohit/Documents/big_data_2/assignment-02-801636/code/mysimbdp-batchingestmanager/mysimbdp-batchingestmanager.py", line 33, in call_relevent_client_application
+    subprocess.Popen("python3", file_to_run)
+  File "/usr/lib/python3.6/subprocess.py", line 629, in __init__
+    raise TypeError("bufsize must be an integer")
+TypeError: bufsize must be an integer
+
+2019-10-27 17:58:43,029 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 17:58:45,707 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 17:58:45,708 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 17:58:48,960 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "/home/rohit/Documents/big_data_2/assignment-02-801636/code/mysimbdp-batchingestmanager/mysimbdp-batchingestmanager.py", line 33, in call_relevent_client_application
+    subprocess.Popen("python3", 60, file_to_run)
+  File "/usr/lib/python3.6/subprocess.py", line 729, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1364, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './clientbatchingestapp/company_1_clientbatchingestapp.py'
+
+2019-10-27 18:01:05,263 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 18:01:18,019 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 18:01:18,019 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 18:01:18,019 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 18:01:18,020 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 18:01:18,025 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "mysimbdp-batchingestmanager.py", line 33, in call_relevent_client_application
+    subprocess.Popen("python3", 60, file_to_run)
+  File "/usr/lib/python3.6/subprocess.py", line 729, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1364, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './clientbatchingestapp/company_1_clientbatchingestapp.py'
+
+2019-10-27 18:01:35,572 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 18:01:40,184 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 18:01:40,184 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 18:01:40,189 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "mysimbdp-batchingestmanager.py", line 33, in call_relevent_client_application
+    subprocess.Popen("python3", 60, file_to_run)
+  File "/usr/lib/python3.6/subprocess.py", line 729, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1364, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './clientbatchingestapp/company_1_clientbatchingestapp.py'
+
+2019-10-27 18:02:26,363 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 18:02:32,723 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 18:02:32,723 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 18:02:32,730 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "mysimbdp-batchingestmanager.py", line 33, in call_relevent_client_application
+    subprocess.Popen("python3", 60, file_to_run)
+  File "/usr/lib/python3.6/subprocess.py", line 729, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1364, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+OSError: [Errno 8] Exec format error: './clientbatchingestapp/company_1_clientbatchingestapp.py'
+
+2019-10-27 18:03:41,834 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 18:03:41,835 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 18:03:41,839 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "mysimbdp-batchingestmanager.py", line 33, in call_relevent_client_application
+    subprocess.Popen("python3", 60, file_to_run)
+  File "/usr/lib/python3.6/subprocess.py", line 729, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1364, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: './clientbatchingestapp/company_1_clientbatchingestapp.py': './clientbatchingestapp/company_1_clientbatchingestapp.py'
+
+2019-10-27 18:17:04,647 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 18:21:02,129 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 18:21:14,511 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 18:21:14,512 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 18:21:14,515 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 18:23:15,439 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 18:23:15,440 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 18:23:15,443 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 18:34:33,508 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 18:34:38,289 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 18:34:38,289 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 18:34:38,292 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 18:38:19,899 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 18:38:19,900 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 18:38:19,903 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 18:39:47,561 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 18:39:47,561 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 18:39:47,566 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 18:45:12,258 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 18:45:12,258 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 18:45:12,264 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 19:55:45,024 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 20:01:15,739 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 20:01:15,739 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 20:01:15,742 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 20:01:59,196 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 20:01:59,196 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 20:01:59,199 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 20:04:06,512 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 20:04:06,513 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 20:04:06,516 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 20:04:46,154 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 20:04:46,155 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 20:04:46,158 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 20:05:49,101 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 20:05:49,101 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 20:05:49,105 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 20:19:09,665 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 20:19:09,665 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 20:19:09,671 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 20:22:00,123 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 20:22:00,124 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 20:22:00,127 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 20:29:48,151 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 20:29:48,152 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 20:29:48,155 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 20:31:34,565 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 20:31:34,566 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 20:31:34,569 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 20:33:18,633 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 20:33:18,633 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 20:33:18,637 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 20:34:40,888 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 20:34:40,889 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 20:34:40,892 : [INFO] - Started clientbatchingestapp for clientID : 1.
+2019-10-27 20:40:47,236 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
+2019-10-27 20:40:47,236 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
+2019-10-27 20:40:47,240 : [INFO] - Started clientbatchingestapp for clientID : 1.

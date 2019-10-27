@@ -5,5 +5,5 @@ import paho.mqtt.client as mqtt
 
 client = mqtt.Client()
 client.connect("mqtt.eclipse.org",1883,60)
-client.publish("topic/big_data_9ff5e", "Hello world!")
+client.publish("topic/big_data_9ff5e", "1")
 client.disconnect()

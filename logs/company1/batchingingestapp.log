@@ -1,0 +1,120 @@
+2019-10-27 18:39:47,770 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "./clientbatchingestapp/company_1_clientbatchingestapp.py", line 59, in __insertFileIntoGridFs
+    if len([name for name in os.listdir(__fileDirectory) if os.path.isfile(os.path.join(__fileDirectory, name))]) > 1:
+FileNotFoundError: [Errno 2] No such file or directory: '../../staging/client_1_temp/'
+
+2019-10-27 18:45:12,489 : [INFO] - Received signal to ingest file data for Client ID : 1
+2019-10-27 18:45:12,490 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "./clientbatchingestapp/company_1_clientbatchingestapp.py", line 59, in __insertFileIntoGridFs
+    if len([name for name in os.listdir(__fileDirectory) if os.path.isfile(os.path.join(__fileDirectory, name))]) > 1:
+FileNotFoundError: [Errno 2] No such file or directory: '../../staging/client_1_temp/'
+
+2019-10-27 20:01:15,933 : [INFO] - Received signal to ingest file data for Client ID : 1
+2019-10-27 20:01:15,933 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "./clientbatchingestapp/company_1_clientbatchingestapp.py", line 60, in __insertFileIntoGridFs
+    if len([name for name in os.listdir(__fileDirectory) if os.path.isfile(os.path.join(__fileDirectory, name))]) > 1:
+FileNotFoundError: [Errno 2] No such file or directory: '../../staging/client_1_temp/'
+
+2019-10-27 20:01:59,392 : [INFO] - Received signal to ingest file data for Client ID : 1
+2019-10-27 20:01:59,395 : [INFO] - TIMING: the time for joining the file was : -0.002013683319091797
+2019-10-27 20:01:59,395 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "./clientbatchingestapp/company_1_clientbatchingestapp.py", line 68, in __insertFileIntoGridFs
+    file = open(file_name)
+FileNotFoundError: [Errno 2] No such file or directory: 'Com_1_rohit.txt'
+
+2019-10-27 20:04:06,712 : [INFO] - Received signal to ingest file data for Client ID : 1
+2019-10-27 20:04:06,713 : [INFO] - TIMING: the time for joining the file was : 0.0005247592926025391
+2019-10-27 20:04:06,714 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "./clientbatchingestapp/company_1_clientbatchingestapp.py", line 68, in __insertFileIntoGridFs
+    file = open(file_name)
+FileNotFoundError: [Errno 2] No such file or directory: 'Com_1_rohit.txt'
+
+2019-10-27 20:04:46,353 : [INFO] - Received signal to ingest file data for Client ID : 1
+2019-10-27 20:04:46,354 : [INFO] - TIMING: the time for joining the file was : 0.00033855438232421875
+2019-10-27 20:04:46,354 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "./clientbatchingestapp/company_1_clientbatchingestapp.py", line 69, in __insertFileIntoGridFs
+    file = open(file_name)
+FileNotFoundError: [Errno 2] No such file or directory: 'Com_1_rohit.txt'
+
+2019-10-27 20:05:49,295 : [INFO] - Received signal to ingest file data for Client ID : 1
+2019-10-27 20:05:49,296 : [INFO] - TIMING: the time for joining the file was : 0.0004177093505859375
+2019-10-27 20:06:19,414 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gridfs/__init__.py", line 130, in put
+    grid_file.write(data)
+  File "/usr/local/lib/python3.6/dist-packages/gridfs/grid_file.py", line 390, in write
+    self._buffer.write(to_write)
+TypeError: a bytes-like object is required, not 'str'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./clientbatchingestapp/company_1_clientbatchingestapp.py", line 70, in __insertFileIntoGridFs
+    id = fs.put(file)
+  File "/usr/local/lib/python3.6/dist-packages/gridfs/__init__.py", line 132, in put
+    grid_file.close()
+  File "/usr/local/lib/python3.6/dist-packages/gridfs/grid_file.py", line 321, in close
+    self.__flush()
+  File "/usr/local/lib/python3.6/dist-packages/gridfs/grid_file.py", line 297, in __flush
+    self.__flush_buffer()
+  File "/usr/local/lib/python3.6/dist-packages/gridfs/grid_file.py", line 289, in __flush_buffer
+    self.__flush_data(self._buffer.getvalue())
+  File "/usr/local/lib/python3.6/dist-packages/gridfs/grid_file.py", line 267, in __flush_data
+    self.__ensure_indexes()
+  File "/usr/local/lib/python3.6/dist-packages/gridfs/grid_file.py", line 210, in __ensure_indexes
+    self.__create_index(self._coll.files, _F_INDEX, False)
+  File "/usr/local/lib/python3.6/dist-packages/gridfs/grid_file.py", line 197, in __create_index
+    doc = collection.find_one(projection={"_id": 1}, session=self._session)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/collection.py", line 1273, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/cursor.py", line 1156, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/cursor.py", line 1050, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1807, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1760, in __start_session
+    server_session = self._get_server_session()
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1793, in _get_server_session
+    return self._topology.get_server_session()
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/topology.py", line 477, in get_server_session
+    None)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/topology.py", line 205, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused
+
+2019-10-27 20:19:09,759 : [INFO] - Received signal to ingest file data for Client ID : 1
+2019-10-27 20:19:09,759 : [INFO] - Moving Com_1_rohit.csv into database
+2019-10-27 20:19:10,221 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
+  File "./clientbatchingestapp/company_1_clientbatchingestapp.py", line 70, in __insertFileIntoGridFs
+    id = fs.put(file)
+  File "/usr/local/lib/python3.6/dist-packages/gridfs/__init__.py", line 130, in put
+    grid_file.write(data)
+  File "/usr/local/lib/python3.6/dist-packages/gridfs/grid_file.py", line 390, in write
+    self._buffer.write(to_write)
+TypeError: a bytes-like object is required, not 'str'
+
+2019-10-27 20:22:00,238 : [INFO] - Received signal to ingest file data for Client ID : 1
+2019-10-27 20:22:00,238 : [INFO] - Moving Com_1_rohit.csv into database
+2019-10-27 20:22:00,277 : [INFO] - Successfully moved file Com_1_rohit.csv into the object store. The fileID was 5db5e04830146247a90caee5
+2019-10-27 20:22:00,277 : [INFO] - TIMING: the time for saving the file Com_1_rohit.csv in the DB was : 0.03844165802001953
+2019-10-27 20:22:00,277 : [INFO] - successfully processed the file Com_1_rohit.csv. The file ID was 5db5e04830146247a90caee5. The size was : 0
+2019-10-27 20:29:48,266 : [INFO] - Received signal to ingest file data for Client ID : 1
+2019-10-27 20:29:48,266 : [INFO] - Moving Com_1_1mb-test_csv.csv into database
+2019-10-27 20:29:48,292 : [INFO] - TIMING: the time for saving the file Com_1_1mb-test_csv.csv in the DB was : 0.025887727737426758
+2019-10-27 20:29:48,292 : [INFO] - successfully processed the file Com_1_1mb-test_csv.csv. The file ID was 5db5e21c5639bdc7f158fc2a. The size was : 1043005
+2019-10-27 20:31:34,679 : [INFO] - Received signal to ingest file data for Client ID : 1
+2019-10-27 20:31:34,679 : [INFO] - Moving COM_1_10mb.csv into database
+2019-10-27 20:31:34,808 : [INFO] - TIMING: the time for saving the file COM_1_10mb.csv in the DB was : 0.1287541389465332
+2019-10-27 20:31:34,809 : [INFO] - successfully processed the file COM_1_10mb.csv. The file ID was 5db5e2861a161a13a86b42a4. The size was : 10000008
+2019-10-27 20:33:18,748 : [INFO] - Received signal to ingest file data for Client ID : 1
+2019-10-27 20:33:18,749 : [INFO] - Moving COM_1_20mb.csv into database
+2019-10-27 20:33:19,023 : [INFO] - TIMING: the time for saving the file COM_1_20mb.csv in the DB was : 0.2740054130554199
+2019-10-27 20:33:19,023 : [INFO] - successfully processed the file COM_1_20mb.csv. The file ID was 5db5e2ee3a7ffaebbc6c6c3d. The size was : 20000017
+2019-10-27 20:34:40,981 : [INFO] - Received signal to ingest file data for Client ID : 1
+2019-10-27 20:34:40,981 : [INFO] - Moving Com_1_4.3Mb.csv into database
+2019-10-27 20:34:41,044 : [INFO] - TIMING: the time for saving the file Com_1_4.3Mb.csv in the DB was : 0.06236863136291504
+2019-10-27 20:34:41,044 : [INFO] - successfully processed the file Com_1_4.3Mb.csv. The file ID was 5db5e3404f56383313e24cc8. The size was : 4376981
+2019-10-27 20:40:47,366 : [INFO] - Received signal to ingest file data for Client ID : 1
+2019-10-27 20:40:47,366 : [INFO] - Moving Com_1_50Mb.csv into database
+2019-10-27 20:40:48,073 : [INFO] - TIMING: the time for saving the file Com_1_50Mb.csv in the DB was : 0.706805944442749
+2019-10-27 20:40:48,073 : [INFO] - successfully processed the file Com_1_50Mb.csv. The file ID was 5db5e4af3aed3f996114a6b2. The size was : 50000040

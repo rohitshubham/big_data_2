@@ -30,7 +30,7 @@ def call_relevent_client_application(client_id):
     file_to_run = clientbatchstagingappfolder + filename
     logging.info(f"running {filename} for ClientID: {client_id}")
     try:
-        subprocess.Popen("python3", "",file_to_run)
+        subprocess.Popen("python3", 60, file_to_run)
         logging.info(f"Started clientbatchingestapp for clientID : {client_id}.")
     except Exception as e:
         logging.error(f"error while running file for clientID: {client_id}. Error is {traceback.format_exc()}")
@@ -58,7 +58,8 @@ def on_connect(client, userdata, flags, rc):
     client.subscribe("topic/big_data_9ff5e")
 
 def on_message(client, userdata, msg):
-    logging.info(f"Received ingestion message for clientID: {msg.payload.decode}. Proceeding to call respective client script.")
+    logging.info(f"Received ingestion message for clientID: {str(msg.payload.decode())}. Proceeding to call respective client script.")
+    call_relevent_client_application(str(msg.payload.decode()))
     
 client = mqtt.Client()
 client.connect(broker_url, broker_port)
