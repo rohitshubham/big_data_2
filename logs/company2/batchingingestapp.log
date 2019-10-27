@@ -1,0 +1,129 @@
+2019-10-28 01:14:49,214 : [INFO] - Received signal for ingestion for client 2
+2019-10-28 01:14:49,214 : [INFO] - Started reading Com_2_rohit.txt for uploading into the DB.
+2019-10-28 01:14:49,214 : [ERROR] - error while running file for clientID: 2. Error is Traceback (most recent call last):
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 69, in insertRowsIntoMongo
+    myList = get_list()
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 44, in get_list
+    with open(file_name) as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Com_2_rohit.txt'
+
+2019-10-28 01:15:56,901 : [INFO] - Received signal for ingestion for client 2
+2019-10-28 01:15:56,901 : [INFO] - Started reading Com_2_rohit.txt for uploading into the DB.
+2019-10-28 01:15:56,901 : [ERROR] - error while running file for clientID: 2. Error is Traceback (most recent call last):
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 69, in insertRowsIntoMongo
+    myList = get_list()
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 44, in get_list
+    with open(file_name) as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Com_2_rohit.txt'
+
+2019-10-28 01:16:57,685 : [INFO] - Received signal for ingestion for client 2
+2019-10-28 01:16:57,685 : [INFO] - Started reading Com_2_rohit.txt for uploading into the DB.
+2019-10-28 01:16:57,685 : [ERROR] - error while running file for clientID: 2. Error is Traceback (most recent call last):
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 70, in insertRowsIntoMongo
+    myList = get_list()
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 45, in get_list
+    with open(file_name) as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Com_2_rohit.txt'
+
+2019-10-28 01:17:26,100 : [INFO] - Received signal for ingestion for client 2
+2019-10-28 01:17:26,100 : [INFO] - Started reading Com_2_rohit.txt for uploading into the DB.
+2019-10-28 01:17:26,100 : [INFO] - Total rows read for file Com_2_rohit.txt are 0
+2019-10-28 01:17:26,100 : [INFO] - TIMING: the time taken to read all the rows in Com_2_rohit.txt in the DB was : 0.00014352798461914062
+2019-10-28 01:17:26,102 : [ERROR] - error while running file for clientID: 2. Error is Traceback (most recent call last):
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 73, in insertRowsIntoMongo
+    connectAndInsertRow(myList)
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 64, in connectAndInsertRow
+    current_collection.insert_many(valueToBeStored)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/collection.py", line 743, in insert_many
+    raise TypeError("documents must be a non-empty list")
+TypeError: documents must be a non-empty list
+
+2019-10-28 01:27:01,672 : [INFO] - Received signal for ingestion for client 2
+2019-10-28 01:27:01,672 : [INFO] - Started reading Com_2_1.4mb.csv for uploading into the DB.
+2019-10-28 01:27:01,677 : [ERROR] - error while running file for clientID: 2. Error is Traceback (most recent call last):
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 69, in insertRowsIntoMongo
+    myList = get_list()
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 48, in get_list
+    myList.append(getFormattedData(i))
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 23, in getFormattedData
+    "host_id" : data[2],
+IndexError: list index out of range
+
+2019-10-28 01:29:01,281 : [INFO] - Received signal for ingestion for client 2
+2019-10-28 01:29:01,281 : [INFO] - Started reading Com_2_1.4mb.csv for uploading into the DB.
+2019-10-28 01:29:01,301 : [INFO] - Total rows read for file Com_2_1.4mb.csv are 9727
+2019-10-28 01:29:01,301 : [INFO] - TIMING: the time taken to read all the rows in Com_2_1.4mb.csv in the DB was : 0.019627809524536133
+2019-10-28 01:29:01,354 : [ERROR] - error while running file for clientID: 2. Error is Traceback (most recent call last):
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 76, in insertRowsIntoMongo
+    connectAndInsertRow(myList)
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 67, in connectAndInsertRow
+    current_collection.insert_many(valueToBeStored)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/collection.py", line 758, in insert_many
+    blk.execute(write_concern, session=session)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/bulk.py", line 511, in execute
+    return self.execute_command(generator, write_concern, session)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/bulk.py", line 346, in execute_command
+    self.is_retryable, retryable_bulk, s, self)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1385, in _retry_with_session
+    return func(session, sock_info, retryable)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/bulk.py", line 341, in retryable_bulk
+    retryable, full_result)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/bulk.py", line 295, in _execute_command
+    result, to_send = bwc.execute(ops, client)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/message.py", line 895, in execute
+    request_id, msg, to_send = self._batch_command(docs)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/message.py", line 889, in _batch_command
+    self.codec, self)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/message.py", line 1376, in _do_bulk_write_command
+    namespace, operation, command, docs, check_keys, opts, ctx)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/message.py", line 1301, in _do_batched_op_msg
+    operation, command, docs, check_keys, ack, opts, ctx)
+bson.errors.InvalidDocument: documents must have only string keys, key was <built-in function id>
+
+2019-10-28 01:33:01,002 : [INFO] - Received signal for ingestion for client 2
+2019-10-28 01:33:01,002 : [INFO] - Started reading Com_2_1.4mb.csv for uploading into the DB.
+2019-10-28 01:33:01,008 : [ERROR] - error while ingesting file for clientID: 2. Error is Traceback (most recent call last):
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 72, in insertRowsIntoMongo
+    myList = get_list()
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 51, in get_list
+    myList.append(getFormattedData(i))
+  File "./clientbatchingestapp/company_2_clientbatchingestapp.py", line 36, in getFormattedData
+    return myDict
+UnboundLocalError: local variable 'myDict' referenced before assignment
+
+2019-10-28 01:33:46,803 : [INFO] - Received signal for ingestion for client 2
+2019-10-28 01:33:46,803 : [INFO] - Started reading Com_2_1.4mb.csv for uploading into the DB.
+2019-10-28 01:33:46,823 : [INFO] - Total rows read for file Com_2_1.4mb.csv are 9727
+2019-10-28 01:33:46,823 : [INFO] - TIMING: the time taken to read all the rows in Com_2_1.4mb.csv in the DB was : 0.019755125045776367
+2019-10-28 01:33:47,101 : [INFO] - TIMING: the time for saving the file Com_2_1.4mb.csv in the DB was : 0.2780487537384033
+2019-10-28 01:33:47,102 : [INFO] - successfully processed the file Com_2_1.4mb.csv. The size was : 1360588
+2019-10-28 01:34:58,089 : [INFO] - Received signal for ingestion for client 2
+2019-10-28 01:34:58,089 : [INFO] - Started reading Com_2_2.6mb.csv for uploading into the DB.
+2019-10-28 01:34:58,128 : [INFO] - Total rows read for file Com_2_2.6mb.csv are 19455
+2019-10-28 01:34:58,128 : [INFO] - TIMING: the time taken to read all the rows in Com_2_2.6mb.csv in the DB was : 0.03833651542663574
+2019-10-28 01:34:58,604 : [INFO] - TIMING: the time for saving the file Com_2_2.6mb.csv in the DB was : 0.4754507541656494
+2019-10-28 01:34:58,604 : [INFO] - successfully processed the file Com_2_2.6mb.csv. The size was : 2721176
+2019-10-28 01:36:21,091 : [INFO] - Received signal for ingestion for client 2
+2019-10-28 01:36:21,091 : [INFO] - Started reading Com_2_5.4mb.csv for uploading into the DB.
+2019-10-28 01:36:21,168 : [INFO] - Total rows read for file Com_2_5.4mb.csv are 38911
+2019-10-28 01:36:21,168 : [INFO] - TIMING: the time taken to read all the rows in Com_2_5.4mb.csv in the DB was : 0.07694101333618164
+2019-10-28 01:36:22,117 : [INFO] - TIMING: the time for saving the file Com_2_5.4mb.csv in the DB was : 0.947223424911499
+2019-10-28 01:36:22,117 : [INFO] - successfully processed the file Com_2_5.4mb.csv. The size was : 5442352
+2019-10-28 01:36:55,701 : [INFO] - Received signal for ingestion for client 2
+2019-10-28 01:36:55,701 : [INFO] - Started reading Com_2_5.4mb.csv for uploading into the DB.
+2019-10-28 01:36:55,861 : [INFO] - Total rows read for file Com_2_5.4mb.csv are 77823
+2019-10-28 01:36:55,861 : [INFO] - TIMING: the time taken to read all the rows in Com_2_11mb.csv in the DB was : 0.15944170951843262
+2019-10-28 01:36:57,759 : [INFO] - TIMING: the time for saving the file Com_2_11mb.csv in the DB was : 1.8948206901550293
+2019-10-28 01:36:57,759 : [INFO] - successfully processed the file Com_2_11mb.csv. The size was : 10884704
+2019-10-28 01:38:19,855 : [INFO] - Received signal for ingestion for client 2
+2019-10-28 01:38:19,855 : [INFO] - Started reading Com_2_22mb.csv for uploading into the DB.
+2019-10-28 01:38:20,194 : [INFO] - Total rows read for file Com_2_22mb.csv are 155648
+2019-10-28 01:38:20,194 : [INFO] - TIMING: the time taken to read all the rows in Com_2_22mb.csv in the DB was : 0.3388805389404297
+2019-10-28 01:38:24,190 : [INFO] - TIMING: the time for saving the file Com_2_22mb.csv in the DB was : 3.9882071018218994
+2019-10-28 01:38:24,191 : [INFO] - successfully processed the file Com_2_22mb.csv. The size was : 21769409
+2019-10-28 01:40:46,274 : [INFO] - Received signal for ingestion for client 2
+2019-10-28 01:40:46,274 : [INFO] - Started reading Com_2_45mb.csv for uploading into the DB.
+2019-10-28 01:40:47,332 : [INFO] - Total rows read for file Com_2_45mb.csv are 311296
+2019-10-28 01:40:47,333 : [INFO] - TIMING: the time taken to read all the rows in Com_2_45mb.csv in the DB was : 1.0587334632873535
+2019-10-28 01:40:57,860 : [INFO] - TIMING: the time for saving the file Com_2_45mb.csv in the DB was : 10.498351573944092
+2019-10-28 01:40:57,863 : [INFO] - successfully processed the file Com_2_45mb.csv. The size was : 43538817

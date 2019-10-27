@@ -8,3 +8,4 @@ def send_mqtt_requests(client_id):
     client.publish("topic/big_data_9ff5e", str(client_id))
     client.disconnect()
 
+send_mqtt_requests(2)

@@ -17,8 +17,9 @@ client_id = 2
 current_file_name = ""
 
 def getFormattedData(message):
-    data = message.split(",")
-    myDict = {  "id" : data[0],
+    try:
+        data = message.split(",")
+        myDict = {  "id" : data[0],
                 "name" : data[1],
                 "host_id" : data[2],
                 "host_name" : data[3],
@@ -29,7 +30,9 @@ def getFormattedData(message):
                 "room_type" : data[8],
                 "price" : data[9],
                 "minimum_nights" : data[10]
-    }
+        }
+    except Exception as e:
+        return {}
     return myDict
 
 # there will be only one file to be processed at once at splitting is not enabled for this client in config.json
@@ -41,7 +44,7 @@ def get_list():
     for file_name in os.listdir(__fileDirectory):
         current_file_name = file_name
         logging.info(f"Started reading {file_name} for uploading into the DB.")
-        with open(file_name) as file: 
+        with open(__fileDirectory + file_name) as file: 
             data = file.read()
             dataRow = data.splitlines()
             for idx, i in enumerate(dataRow):
@@ -76,7 +79,7 @@ def insertRowsIntoMongo():
         logging.info(f"TIMING: the time for saving the file {current_file_name} in the DB was : {end-start}")
         logging.info(f"successfully processed the file {current_file_name}. The size was : {os.path.getsize(__fileDirectory+current_file_name)}")
     except Exception as e:
-        logging.error(f"error while running file for clientID: {client_id}. Error is {traceback.format_exc()}")
+        logging.error(f"error while ingesting file for clientID: {client_id}. Error is {traceback.format_exc()}")
 
 insertRowsIntoMongo()
 
