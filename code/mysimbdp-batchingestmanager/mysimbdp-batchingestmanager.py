@@ -1,3 +1,9 @@
+
+#This manager dynamically loads the client scripts and executes them. The notification to load client script comes 
+# as through the clientID. We have assumed that the clientID is constant in the system and hence all the client scripts
+# can be traced from it. 
+# The notification for ingestmanager to start the clientIngestScript is given via a MQTT signal.
+# The clientID is passed as the payload on our MQTT notification. 
 import logging
 import paho.mqtt.client as mqtt
 import subprocess

@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+#This client does not use gridfs bucket storage. INsted it parses the file and saves the data.
 import pymongo
 import logging
 import time
