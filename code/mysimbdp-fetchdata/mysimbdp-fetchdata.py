@@ -7,6 +7,8 @@ import re
 import shutil
 import time 
 import traceback
+from sendingestNotification import send_mqtt_requests
+
 
 custom_logging_format = '%(asctime)s : [%(levelname)s] - %(message)s'
 logging.basicConfig(filename= "../../logs/mysimbdp_fetchData.log" , filemode="a", level= logging.INFO, format=custom_logging_format)
@@ -17,7 +19,7 @@ path = './client-input-directory/'
 config_path = "config.json"
 temp_client_folder = ""
 client_name = ""
-log = ""
+current_client_id = 0
 
 def does_file_exist_in_dir(path):
     return any(isfile(join(path, i)) for i in listdir(path))
@@ -69,10 +71,11 @@ def split_file(fromfile, todir, chunksize, client_name):
     return partnum
 
 # Status Code: 0 = Successful , 1 = Unsuccessful
+# Every config data is read from config.json
 def client_validations(fileName, path):
     company_1_config = get_config_data()["Company_1_Profile"]
     company_2_config = get_config_data()["Company_2_Profile"]
-    global temp_client_folder, client_name
+    global temp_client_folder, client_name, current_client_id
 
     if re.match(company_1_config["File_Regex"], fileName):
         logging.info(f"File name {fileName} matches with Company 1's profile.")
@@ -83,7 +86,8 @@ def client_validations(fileName, path):
             return 1
 
         temp_client_folder = "client_1_temp/"
-        client_name = "comp_1"
+        current_client_id = company_1_config["companyId"]
+        client_name = company_1_config["companyName"]
         if company_1_config["Allow_Split"] == "True" and int(company_1_config["Block_size"]) < getsize(path + fileName):
             # it means we need to split the file before transferring (micro-batching)            
             split_file(path + fileName, path + temp_client_folder, company_1_config["Block_size"], client_name)
@@ -100,7 +104,8 @@ def client_validations(fileName, path):
             logging.warning(f"{fileName} cannot be processed as it does not match any of the accepted formats.") 
             return 1
         temp_client_folder = "client_2_temp/"
-        client_name = "comp_2"
+        client_name = company_2_config["companyName"]
+        current_client_id = company_2_config["companyId"]
         if company_2_config["Allow_Split"] == "True" and int(company_2_config["Block_size"]) < getsize(path + fileName):
             # it means we need to split the file before transferring (micro-batching)
             logging.info("Splitting the files in small batches.")
@@ -115,7 +120,7 @@ def client_validations(fileName, path):
         logging.warning("The file did not match any regex of any client's profile. Hence cannot be processed.")
         return 1
 
-# we use shutil library for movement. This is able even move files across disks and network 
+# we use shutil library for movement. This is able even move files across disks
 def move_file_to_staging(staging_location):
     for fileName in listdir(path+temp_client_folder):
         if not os.path.exists(staging_location+temp_client_folder):                  
@@ -160,6 +165,7 @@ def checkIfFIleExists():
                     shutil.rmtree(path+temp_client_folder)
                     end = time.time()
                     logging.info(f"TIMING: Time taken to process {file_name} is {end-start}")
+                    send_mqtt_requests(current_client_id)
  
 
 #checks the folder for new file every second

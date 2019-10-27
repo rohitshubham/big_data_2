@@ -3,15 +3,19 @@
     "Max_filename_length" : 20,
     "Company_1_Profile" :  
         {
+            "companyId" : 1,
             "File_Regex" : "Com_1.*",
             "Allow_Split" : "True",
             "Block_size" : 1000000,
-            "Accepted_formats" : "txt,csv"
+            "Accepted_formats" : "txt,csv",
+            "companyName" : "comp_1"
         },
     "Company_2_Profile": 
         {
+            "companyId": 2,
             "File_Regex" : "Com_2.*",
             "Allow_Split" : "False",
-            "Accepted_formats" : "txt,log,csv"
+            "Accepted_formats" : "txt,log,csv",
+            "companyName" : "comp_2"
         }    
 }
