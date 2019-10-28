@@ -1,0 +1,98 @@
+2019-10-28 19:35:30,571 : [ERROR] - error while running file for client. The input was []. Error is Traceback (most recent call last):
+  File "mysimbdp-streamingestmanager.py", line 50, in run_command
+    if validate_command_arguments() == 1:
+  File "mysimbdp-streamingestmanager.py", line 21, in validate_command_arguments
+    if arguments[2] not in ["start", "stop"]:
+IndexError: list index out of range
+
+2019-10-28 19:37:02,260 : [ERROR] - error while running file for client. The input was ['client1', 'start']. Error is Traceback (most recent call last):
+  File "mysimbdp-streamingestmanager.py", line 50, in run_command
+    if validate_command_arguments() == 1:
+  File "mysimbdp-streamingestmanager.py", line 21, in validate_command_arguments
+    if arguments[2] not in ["start", "stop"]:
+IndexError: list index out of range
+
+2019-10-28 19:37:49,713 : [ERROR] - error while running file for client. The input was ['client1', 'start']. Error is Traceback (most recent call last):
+  File "mysimbdp-streamingestmanager.py", line 51, in run_command
+    if validate_command_arguments() == 1:
+  File "mysimbdp-streamingestmanager.py", line 22, in validate_command_arguments
+    if arguments[2] not in ["start", "stop"]:
+IndexError: list index out of range
+
+2019-10-28 19:39:49,768 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 19:39:49,769 : [ERROR] - error while running file for client. The input was ['client1', 'start']. Error is Traceback (most recent call last):
+  File "mysimbdp-streamingestmanager.py", line 54, in run_command
+    start_script()
+  File "mysimbdp-streamingestmanager.py", line 38, in start_script
+    prc = subprocess.Popen("python3", 60, file_to_run)
+  File "/usr/lib/python3.6/subprocess.py", line 729, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1364, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './clientstreamingestapp/company_1_clientstreamingestapp.py'
+
+2019-10-28 19:41:08,027 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 19:41:08,028 : [ERROR] - error while running file for client. The input was ['client1', 'start']. Error is Traceback (most recent call last):
+  File "mysimbdp-streamingestmanager.py", line 54, in run_command
+    start_script()
+  File "mysimbdp-streamingestmanager.py", line 38, in start_script
+    prc = subprocess.Popen("python3", 60, file_to_run)
+  File "/usr/lib/python3.6/subprocess.py", line 729, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1364, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './clientstreamingestapp/company_1_clientstreamingestapp.py'
+
+2019-10-28 19:42:01,688 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 19:42:01,690 : [ERROR] - error while running file for client. The input was ['client1', 'start']. Error is Traceback (most recent call last):
+  File "mysimbdp-streamingestmanager.py", line 54, in run_command
+    start_script()
+  File "mysimbdp-streamingestmanager.py", line 38, in start_script
+    prc = subprocess.Popen("python3", 60, file_to_run)
+  File "/usr/lib/python3.6/subprocess.py", line 729, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1364, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+OSError: [Errno 8] Exec format error: './clientstreamingestapp/company_1_clientstreamingestapp.py'
+
+2019-10-28 19:48:31,075 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 19:48:31,075 : [INFO] - ProcessID : Started the process with PID: 5866. Remember to use it to save the process.
+2019-10-28 19:49:15,479 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 19:49:15,480 : [INFO] - ProcessID : Started the process with PID: 5895. Remember to use it to kill the process.
+2019-10-28 19:50:05,514 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 19:50:05,514 : [INFO] - ProcessID : Started the process with PID: 5913. Remember to use it to kill the process.
+2019-10-28 19:51:56,008 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 19:51:56,009 : [INFO] - ProcessID : Started the process with PID: 5993. Remember to use it to kill the process.
+2019-10-28 19:54:22,819 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 19:54:22,820 : [INFO] - ProcessID : Started the process with PID: 6071. Remember to use it to kill the process.
+2019-10-28 19:54:45,800 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 19:54:45,800 : [INFO] - attempting to stop process for client1
+2019-10-28 19:54:45,800 : [ERROR] - error while running file for client. The input was ['client1', 'stop', '6071']. Error is Traceback (most recent call last):
+  File "mysimbdp-streamingestmanager.py", line 57, in run_command
+    stop_script()
+  File "mysimbdp-streamingestmanager.py", line 46, in stop_script
+    subprocess.call(["kill", "-9", "%d" % process_id])
+TypeError: %d format: a number is required, not str
+
+2019-10-28 19:55:16,405 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 19:55:16,405 : [INFO] - ProcessID : Started the process with PID: 6118. Remember to use it to kill the process.
+2019-10-28 19:55:28,842 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 19:55:28,842 : [INFO] - attempting to stop process for client1
+2019-10-28 19:55:28,847 : [INFO] - ProcessID: successfully killled the process for client1. The pID killed was 6118 
+2019-10-28 19:55:34,747 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 19:55:34,748 : [INFO] - ProcessID : Started the process with PID: 6131. Remember to use it to kill the process.
+2019-10-28 19:55:48,646 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 19:55:48,646 : [INFO] - attempting to stop process for client1
+2019-10-28 19:55:48,648 : [INFO] - ProcessID: successfully killled the process for client1. The pID killed was 6131 
+2019-10-28 21:16:40,452 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 21:16:40,455 : [INFO] - ProcessID : Started the process with PID: 13077. Remember to use it to kill the process.
+2019-10-28 21:17:10,504 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 21:17:10,506 : [INFO] - ProcessID : Started the process with PID: 13116. Remember to use it to kill the process.
+2019-10-28 21:17:56,820 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 21:17:56,820 : [INFO] - attempting to stop process for client1
+2019-10-28 21:17:56,825 : [INFO] - ProcessID: successfully killled the process for client1. The pID killed was 13116 
+2019-10-28 21:18:13,792 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 21:18:13,794 : [INFO] - ProcessID : Started the process with PID: 13260. Remember to use it to kill the process.
+2019-10-28 21:18:27,051 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-28 21:18:27,051 : [INFO] - attempting to stop process for client1
+2019-10-28 21:18:27,056 : [INFO] - ProcessID: successfully killled the process for client1. The pID killed was 13260 

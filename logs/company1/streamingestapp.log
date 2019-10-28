@@ -1,0 +1,645 @@
+2019-10-28 21:12:38,478 : [INFO] - Connected to localhost with result code 0.
+2019-10-28 21:12:38,479 : [INFO] - Subscribed to topic topic/big_data_c2dcc on localhost
+2019-10-28 21:13:04,976 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:13:35,122 : [ERROR] - Some error ocurred while ingesting the data. error is Traceback (most recent call last):
+  File "company_1_clientstreamingestapp.py", line 54, in on_message
+    start_ingestion(str(msg.payload.decode()))
+  File "company_1_clientstreamingestapp.py", line 41, in start_ingestion
+    connectAndInsertRow(my_dict)
+  File "company_1_clientstreamingestapp.py", line 36, in connectAndInsertRow
+    current_collection.insert_one(valueToBeStored)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/collection.py", line 698, in insert_one
+    session=session),
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/collection.py", line 612, in _insert
+    bypass_doc_val, session)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/collection.py", line 600, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1491, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1820, in _tmp_session
+    s = self._ensure_session(session)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1807, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1760, in __start_session
+    server_session = self._get_server_session()
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1793, in _get_server_session
+    return self._topology.get_server_session()
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/topology.py", line 477, in get_server_session
+    None)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/topology.py", line 205, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused
+
+2019-10-28 21:13:35,123 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:05,249 : [ERROR] - Some error ocurred while ingesting the data. error is Traceback (most recent call last):
+  File "company_1_clientstreamingestapp.py", line 54, in on_message
+    start_ingestion(str(msg.payload.decode()))
+  File "company_1_clientstreamingestapp.py", line 41, in start_ingestion
+    connectAndInsertRow(my_dict)
+  File "company_1_clientstreamingestapp.py", line 36, in connectAndInsertRow
+    current_collection.insert_one(valueToBeStored)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/collection.py", line 698, in insert_one
+    session=session),
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/collection.py", line 612, in _insert
+    bypass_doc_val, session)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/collection.py", line 600, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1491, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1820, in _tmp_session
+    s = self._ensure_session(session)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1807, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1760, in __start_session
+    server_session = self._get_server_session()
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/mongo_client.py", line 1793, in _get_server_session
+    return self._topology.get_server_session()
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/topology.py", line 477, in get_server_session
+    None)
+  File "/usr/local/lib/python3.6/dist-packages/pymongo/topology.py", line 205, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused
+
+2019-10-28 21:14:05,249 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:30,893 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:30,893 : [INFO] - Reporting: Total messages ingested this session:1
+2019-10-28 21:14:30,894 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:30,894 : [INFO] - Reporting: Time taken for ingestion was 25.64359760284424
+2019-10-28 21:14:30,894 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:30,904 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:30,904 : [INFO] - Reporting: Total messages ingested this session:2
+2019-10-28 21:14:30,905 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:30,905 : [INFO] - Reporting: Time taken for ingestion was 0.009362936019897461
+2019-10-28 21:14:30,906 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:30,917 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:30,917 : [INFO] - Reporting: Total messages ingested this session:3
+2019-10-28 21:14:30,917 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:30,918 : [INFO] - Reporting: Time taken for ingestion was 0.010843753814697266
+2019-10-28 21:14:30,918 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:30,928 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:30,929 : [INFO] - Reporting: Total messages ingested this session:4
+2019-10-28 21:14:30,929 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:30,929 : [INFO] - Reporting: Time taken for ingestion was 0.010349512100219727
+2019-10-28 21:14:30,930 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:30,939 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:30,940 : [INFO] - Reporting: Total messages ingested this session:5
+2019-10-28 21:14:30,940 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:30,940 : [INFO] - Reporting: Time taken for ingestion was 0.009302139282226562
+2019-10-28 21:14:30,940 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:30,950 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:30,951 : [INFO] - Reporting: Total messages ingested this session:6
+2019-10-28 21:14:30,951 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:30,951 : [INFO] - Reporting: Time taken for ingestion was 0.009738922119140625
+2019-10-28 21:14:30,952 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:30,962 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:30,962 : [INFO] - Reporting: Total messages ingested this session:7
+2019-10-28 21:14:30,962 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:30,962 : [INFO] - Reporting: Time taken for ingestion was 0.009607791900634766
+2019-10-28 21:14:30,963 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:30,973 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:30,973 : [INFO] - Reporting: Total messages ingested this session:8
+2019-10-28 21:14:30,973 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:30,974 : [INFO] - Reporting: Time taken for ingestion was 0.009735584259033203
+2019-10-28 21:14:30,974 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:30,984 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:30,984 : [INFO] - Reporting: Total messages ingested this session:9
+2019-10-28 21:14:30,984 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:30,984 : [INFO] - Reporting: Time taken for ingestion was 0.009456872940063477
+2019-10-28 21:14:47,595 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:47,607 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:47,607 : [INFO] - Reporting: Total messages ingested this session:10
+2019-10-28 21:14:47,607 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:47,607 : [INFO] - Reporting: Time taken for ingestion was 0.011507272720336914
+2019-10-28 21:14:47,697 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:47,709 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:47,709 : [INFO] - Reporting: Total messages ingested this session:11
+2019-10-28 21:14:47,709 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:47,710 : [INFO] - Reporting: Time taken for ingestion was 0.010956525802612305
+2019-10-28 21:14:47,799 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:47,811 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:47,811 : [INFO] - Reporting: Total messages ingested this session:12
+2019-10-28 21:14:47,812 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:47,812 : [INFO] - Reporting: Time taken for ingestion was 0.011257171630859375
+2019-10-28 21:14:47,901 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:47,914 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:47,914 : [INFO] - Reporting: Total messages ingested this session:13
+2019-10-28 21:14:47,915 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:47,915 : [INFO] - Reporting: Time taken for ingestion was 0.012071609497070312
+2019-10-28 21:14:48,010 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:48,024 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:48,025 : [INFO] - Reporting: Total messages ingested this session:14
+2019-10-28 21:14:48,025 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:48,025 : [INFO] - Reporting: Time taken for ingestion was 0.013957023620605469
+2019-10-28 21:14:48,109 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:48,120 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:48,120 : [INFO] - Reporting: Total messages ingested this session:15
+2019-10-28 21:14:48,121 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:48,121 : [INFO] - Reporting: Time taken for ingestion was 0.010741710662841797
+2019-10-28 21:14:48,211 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:48,223 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:48,224 : [INFO] - Reporting: Total messages ingested this session:16
+2019-10-28 21:14:48,224 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:48,225 : [INFO] - Reporting: Time taken for ingestion was 0.01183938980102539
+2019-10-28 21:14:48,314 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:48,328 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:48,328 : [INFO] - Reporting: Total messages ingested this session:17
+2019-10-28 21:14:48,329 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:48,329 : [INFO] - Reporting: Time taken for ingestion was 0.013574838638305664
+2019-10-28 21:14:48,417 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:48,429 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:48,430 : [INFO] - Reporting: Total messages ingested this session:18
+2019-10-28 21:14:48,430 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:48,430 : [INFO] - Reporting: Time taken for ingestion was 0.011936664581298828
+2019-10-28 21:14:48,520 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:48,533 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:48,533 : [INFO] - Reporting: Total messages ingested this session:19
+2019-10-28 21:14:48,533 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:48,534 : [INFO] - Reporting: Time taken for ingestion was 0.012451648712158203
+2019-10-28 21:14:48,622 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:48,634 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:48,635 : [INFO] - Reporting: Total messages ingested this session:20
+2019-10-28 21:14:48,635 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:48,635 : [INFO] - Reporting: Time taken for ingestion was 0.011604547500610352
+2019-10-28 21:14:48,725 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:48,737 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:48,737 : [INFO] - Reporting: Total messages ingested this session:21
+2019-10-28 21:14:48,738 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:48,738 : [INFO] - Reporting: Time taken for ingestion was 0.01179957389831543
+2019-10-28 21:14:48,827 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:48,838 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:48,838 : [INFO] - Reporting: Total messages ingested this session:22
+2019-10-28 21:14:48,839 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:48,839 : [INFO] - Reporting: Time taken for ingestion was 0.011075735092163086
+2019-10-28 21:14:48,929 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:48,940 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:48,941 : [INFO] - Reporting: Total messages ingested this session:23
+2019-10-28 21:14:48,941 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:48,941 : [INFO] - Reporting: Time taken for ingestion was 0.011220455169677734
+2019-10-28 21:14:49,031 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:49,042 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:49,042 : [INFO] - Reporting: Total messages ingested this session:24
+2019-10-28 21:14:49,043 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:49,043 : [INFO] - Reporting: Time taken for ingestion was 0.010629892349243164
+2019-10-28 21:14:49,134 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:49,147 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:49,147 : [INFO] - Reporting: Total messages ingested this session:25
+2019-10-28 21:14:49,148 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:49,148 : [INFO] - Reporting: Time taken for ingestion was 0.011999368667602539
+2019-10-28 21:14:49,237 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:49,248 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:49,249 : [INFO] - Reporting: Total messages ingested this session:26
+2019-10-28 21:14:49,249 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:49,249 : [INFO] - Reporting: Time taken for ingestion was 0.011142969131469727
+2019-10-28 21:14:49,339 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:49,351 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:49,352 : [INFO] - Reporting: Total messages ingested this session:27
+2019-10-28 21:14:49,352 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:49,352 : [INFO] - Reporting: Time taken for ingestion was 0.011663198471069336
+2019-10-28 21:14:49,441 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:49,453 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:49,453 : [INFO] - Reporting: Total messages ingested this session:28
+2019-10-28 21:14:49,454 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:49,454 : [INFO] - Reporting: Time taken for ingestion was 0.011044025421142578
+2019-10-28 21:14:49,544 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:49,556 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:49,556 : [INFO] - Reporting: Total messages ingested this session:29
+2019-10-28 21:14:49,557 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:49,557 : [INFO] - Reporting: Time taken for ingestion was 0.011674880981445312
+2019-10-28 21:14:49,646 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:49,657 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:49,658 : [INFO] - Reporting: Total messages ingested this session:30
+2019-10-28 21:14:49,658 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:49,658 : [INFO] - Reporting: Time taken for ingestion was 0.010625839233398438
+2019-10-28 21:14:49,749 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:49,760 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:49,761 : [INFO] - Reporting: Total messages ingested this session:31
+2019-10-28 21:14:49,761 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:49,761 : [INFO] - Reporting: Time taken for ingestion was 0.011044025421142578
+2019-10-28 21:14:49,851 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:49,863 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:49,863 : [INFO] - Reporting: Total messages ingested this session:32
+2019-10-28 21:14:49,863 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:49,864 : [INFO] - Reporting: Time taken for ingestion was 0.011404037475585938
+2019-10-28 21:14:49,953 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:49,964 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:49,965 : [INFO] - Reporting: Total messages ingested this session:33
+2019-10-28 21:14:49,965 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:49,965 : [INFO] - Reporting: Time taken for ingestion was 0.01115107536315918
+2019-10-28 21:14:50,055 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:50,066 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:50,067 : [INFO] - Reporting: Total messages ingested this session:34
+2019-10-28 21:14:50,067 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:50,067 : [INFO] - Reporting: Time taken for ingestion was 0.010999441146850586
+2019-10-28 21:14:50,157 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:50,169 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:50,170 : [INFO] - Reporting: Total messages ingested this session:35
+2019-10-28 21:14:50,170 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:50,171 : [INFO] - Reporting: Time taken for ingestion was 0.011884689331054688
+2019-10-28 21:14:50,259 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:50,271 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:50,272 : [INFO] - Reporting: Total messages ingested this session:36
+2019-10-28 21:14:50,272 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:50,272 : [INFO] - Reporting: Time taken for ingestion was 0.011605024337768555
+2019-10-28 21:14:50,361 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:50,373 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:50,373 : [INFO] - Reporting: Total messages ingested this session:37
+2019-10-28 21:14:50,374 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:50,374 : [INFO] - Reporting: Time taken for ingestion was 0.011208534240722656
+2019-10-28 21:14:50,464 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:50,476 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:50,477 : [INFO] - Reporting: Total messages ingested this session:38
+2019-10-28 21:14:50,477 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:50,477 : [INFO] - Reporting: Time taken for ingestion was 0.012034416198730469
+2019-10-28 21:14:50,566 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:50,578 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:50,578 : [INFO] - Reporting: Total messages ingested this session:39
+2019-10-28 21:14:50,579 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:50,579 : [INFO] - Reporting: Time taken for ingestion was 0.01134037971496582
+2019-10-28 21:14:50,668 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:50,680 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:50,681 : [INFO] - Reporting: Total messages ingested this session:40
+2019-10-28 21:14:50,681 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:50,681 : [INFO] - Reporting: Time taken for ingestion was 0.011790990829467773
+2019-10-28 21:14:50,770 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:50,782 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:50,782 : [INFO] - Reporting: Total messages ingested this session:41
+2019-10-28 21:14:50,783 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:50,783 : [INFO] - Reporting: Time taken for ingestion was 0.011339902877807617
+2019-10-28 21:14:50,872 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:50,885 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:50,885 : [INFO] - Reporting: Total messages ingested this session:42
+2019-10-28 21:14:50,885 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:50,886 : [INFO] - Reporting: Time taken for ingestion was 0.011742591857910156
+2019-10-28 21:14:50,975 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:50,987 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:50,987 : [INFO] - Reporting: Total messages ingested this session:43
+2019-10-28 21:14:50,988 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:50,988 : [INFO] - Reporting: Time taken for ingestion was 0.012112140655517578
+2019-10-28 21:14:51,077 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:51,091 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:51,092 : [INFO] - Reporting: Total messages ingested this session:44
+2019-10-28 21:14:51,092 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:51,092 : [INFO] - Reporting: Time taken for ingestion was 0.013477802276611328
+2019-10-28 21:14:51,180 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:51,194 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:51,194 : [INFO] - Reporting: Total messages ingested this session:45
+2019-10-28 21:14:51,195 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:51,195 : [INFO] - Reporting: Time taken for ingestion was 0.013393878936767578
+2019-10-28 21:14:51,283 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:51,296 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:51,296 : [INFO] - Reporting: Total messages ingested this session:46
+2019-10-28 21:14:51,297 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:51,297 : [INFO] - Reporting: Time taken for ingestion was 0.012443780899047852
+2019-10-28 21:14:51,385 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:51,398 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:51,398 : [INFO] - Reporting: Total messages ingested this session:47
+2019-10-28 21:14:51,399 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:51,399 : [INFO] - Reporting: Time taken for ingestion was 0.012373924255371094
+2019-10-28 21:14:51,488 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:51,502 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:51,502 : [INFO] - Reporting: Total messages ingested this session:48
+2019-10-28 21:14:51,502 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:51,503 : [INFO] - Reporting: Time taken for ingestion was 0.013612985610961914
+2019-10-28 21:14:51,590 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:51,605 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:51,605 : [INFO] - Reporting: Total messages ingested this session:49
+2019-10-28 21:14:51,605 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:51,606 : [INFO] - Reporting: Time taken for ingestion was 0.014290094375610352
+2019-10-28 21:14:51,693 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:51,707 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:51,707 : [INFO] - Reporting: Total messages ingested this session:50
+2019-10-28 21:14:51,708 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:51,708 : [INFO] - Reporting: Time taken for ingestion was 0.013752937316894531
+2019-10-28 21:14:51,795 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:51,809 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:51,809 : [INFO] - Reporting: Total messages ingested this session:51
+2019-10-28 21:14:51,810 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:51,810 : [INFO] - Reporting: Time taken for ingestion was 0.012907028198242188
+2019-10-28 21:14:51,898 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:51,910 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:51,911 : [INFO] - Reporting: Total messages ingested this session:52
+2019-10-28 21:14:51,911 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:51,911 : [INFO] - Reporting: Time taken for ingestion was 0.012290477752685547
+2019-10-28 21:14:52,000 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:52,025 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:52,025 : [INFO] - Reporting: Total messages ingested this session:53
+2019-10-28 21:14:52,026 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:52,026 : [INFO] - Reporting: Time taken for ingestion was 0.024419307708740234
+2019-10-28 21:14:52,102 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:52,114 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:52,115 : [INFO] - Reporting: Total messages ingested this session:54
+2019-10-28 21:14:52,115 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:52,115 : [INFO] - Reporting: Time taken for ingestion was 0.011517524719238281
+2019-10-28 21:14:52,206 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:52,220 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:52,220 : [INFO] - Reporting: Total messages ingested this session:55
+2019-10-28 21:14:52,221 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:52,221 : [INFO] - Reporting: Time taken for ingestion was 0.013887166976928711
+2019-10-28 21:14:52,308 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:52,320 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:52,321 : [INFO] - Reporting: Total messages ingested this session:56
+2019-10-28 21:14:52,321 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:52,321 : [INFO] - Reporting: Time taken for ingestion was 0.012194395065307617
+2019-10-28 21:14:52,410 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:52,421 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:52,421 : [INFO] - Reporting: Total messages ingested this session:57
+2019-10-28 21:14:52,422 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:52,422 : [INFO] - Reporting: Time taken for ingestion was 0.011046886444091797
+2019-10-28 21:14:52,512 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:52,524 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:52,525 : [INFO] - Reporting: Total messages ingested this session:58
+2019-10-28 21:14:52,525 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:52,525 : [INFO] - Reporting: Time taken for ingestion was 0.012103796005249023
+2019-10-28 21:14:52,614 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:52,626 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:52,626 : [INFO] - Reporting: Total messages ingested this session:59
+2019-10-28 21:14:52,627 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:52,627 : [INFO] - Reporting: Time taken for ingestion was 0.011392354965209961
+2019-10-28 21:14:52,716 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:52,727 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:52,728 : [INFO] - Reporting: Total messages ingested this session:60
+2019-10-28 21:14:52,728 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:52,728 : [INFO] - Reporting: Time taken for ingestion was 0.01080775260925293
+2019-10-28 21:14:52,818 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:52,830 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:52,831 : [INFO] - Reporting: Total messages ingested this session:61
+2019-10-28 21:14:52,831 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:52,831 : [INFO] - Reporting: Time taken for ingestion was 0.011616706848144531
+2019-10-28 21:14:52,920 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:52,932 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:52,932 : [INFO] - Reporting: Total messages ingested this session:62
+2019-10-28 21:14:52,933 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:52,933 : [INFO] - Reporting: Time taken for ingestion was 0.01106882095336914
+2019-10-28 21:14:53,022 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:53,034 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:53,035 : [INFO] - Reporting: Total messages ingested this session:63
+2019-10-28 21:14:53,035 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:53,035 : [INFO] - Reporting: Time taken for ingestion was 0.01151728630065918
+2019-10-28 21:14:53,125 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:53,138 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:53,139 : [INFO] - Reporting: Total messages ingested this session:64
+2019-10-28 21:14:53,139 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:53,140 : [INFO] - Reporting: Time taken for ingestion was 0.012610435485839844
+2019-10-28 21:14:53,227 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:53,239 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:53,239 : [INFO] - Reporting: Total messages ingested this session:65
+2019-10-28 21:14:53,239 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:53,240 : [INFO] - Reporting: Time taken for ingestion was 0.011242151260375977
+2019-10-28 21:14:53,329 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:53,341 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:53,342 : [INFO] - Reporting: Total messages ingested this session:66
+2019-10-28 21:14:53,342 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:53,342 : [INFO] - Reporting: Time taken for ingestion was 0.011611700057983398
+2019-10-28 21:14:53,431 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:53,443 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:53,444 : [INFO] - Reporting: Total messages ingested this session:67
+2019-10-28 21:14:53,444 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:53,444 : [INFO] - Reporting: Time taken for ingestion was 0.011635303497314453
+2019-10-28 21:14:53,534 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:53,545 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:53,546 : [INFO] - Reporting: Total messages ingested this session:68
+2019-10-28 21:14:53,546 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:53,546 : [INFO] - Reporting: Time taken for ingestion was 0.011233091354370117
+2019-10-28 21:14:53,636 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:53,648 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:53,648 : [INFO] - Reporting: Total messages ingested this session:69
+2019-10-28 21:14:53,649 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:53,649 : [INFO] - Reporting: Time taken for ingestion was 0.011574983596801758
+2019-10-28 21:14:53,738 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:53,749 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:53,750 : [INFO] - Reporting: Total messages ingested this session:70
+2019-10-28 21:14:53,750 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:53,750 : [INFO] - Reporting: Time taken for ingestion was 0.011007070541381836
+2019-10-28 21:14:53,840 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:14:53,852 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:14:53,853 : [INFO] - Reporting: Total messages ingested this session:71
+2019-10-28 21:14:53,853 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:14:53,853 : [INFO] - Reporting: Time taken for ingestion was 0.01130986213684082
+2019-10-28 21:17:10,705 : [INFO] - Connected to localhost with result code 0.
+2019-10-28 21:17:10,705 : [INFO] - Subscribed to topic topic/big_data_c2dcc on localhost
+2019-10-28 21:17:17,730 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:17,787 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:17,788 : [INFO] - Reporting: Total messages ingested this session:1
+2019-10-28 21:17:17,788 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:17,789 : [INFO] - Reporting: Time taken for ingestion was 0.05761075019836426
+2019-10-28 21:17:17,832 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:17,845 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:17,845 : [INFO] - Reporting: Total messages ingested this session:2
+2019-10-28 21:17:17,845 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:17,845 : [INFO] - Reporting: Time taken for ingestion was 0.01169276237487793
+2019-10-28 21:17:17,935 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:17,947 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:17,947 : [INFO] - Reporting: Total messages ingested this session:3
+2019-10-28 21:17:17,947 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:17,948 : [INFO] - Reporting: Time taken for ingestion was 0.011546611785888672
+2019-10-28 21:17:18,037 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:18,049 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:18,049 : [INFO] - Reporting: Total messages ingested this session:4
+2019-10-28 21:17:18,049 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:18,050 : [INFO] - Reporting: Time taken for ingestion was 0.011380195617675781
+2019-10-28 21:17:18,139 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:18,151 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:18,151 : [INFO] - Reporting: Total messages ingested this session:5
+2019-10-28 21:17:18,152 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:18,152 : [INFO] - Reporting: Time taken for ingestion was 0.011315345764160156
+2019-10-28 21:17:18,242 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:18,253 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:18,254 : [INFO] - Reporting: Total messages ingested this session:6
+2019-10-28 21:17:18,254 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:18,254 : [INFO] - Reporting: Time taken for ingestion was 0.011258125305175781
+2019-10-28 21:17:18,344 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:18,355 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:18,356 : [INFO] - Reporting: Total messages ingested this session:7
+2019-10-28 21:17:18,356 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:18,356 : [INFO] - Reporting: Time taken for ingestion was 0.011432647705078125
+2019-10-28 21:17:18,446 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:18,457 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:18,457 : [INFO] - Reporting: Total messages ingested this session:8
+2019-10-28 21:17:18,457 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:18,458 : [INFO] - Reporting: Time taken for ingestion was 0.010528802871704102
+2019-10-28 21:17:18,549 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:18,562 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:18,563 : [INFO] - Reporting: Total messages ingested this session:9
+2019-10-28 21:17:18,563 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:18,563 : [INFO] - Reporting: Time taken for ingestion was 0.013050317764282227
+2019-10-28 21:17:18,651 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:18,662 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:18,663 : [INFO] - Reporting: Total messages ingested this session:10
+2019-10-28 21:17:18,663 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:18,663 : [INFO] - Reporting: Time taken for ingestion was 0.011002302169799805
+2019-10-28 21:17:18,753 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:18,765 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:18,765 : [INFO] - Reporting: Total messages ingested this session:11
+2019-10-28 21:17:18,766 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:18,766 : [INFO] - Reporting: Time taken for ingestion was 0.011408805847167969
+2019-10-28 21:17:18,855 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:18,866 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:18,866 : [INFO] - Reporting: Total messages ingested this session:12
+2019-10-28 21:17:18,867 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:18,867 : [INFO] - Reporting: Time taken for ingestion was 0.010617733001708984
+2019-10-28 21:17:18,957 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:18,968 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:18,969 : [INFO] - Reporting: Total messages ingested this session:13
+2019-10-28 21:17:18,969 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:18,969 : [INFO] - Reporting: Time taken for ingestion was 0.010586023330688477
+2019-10-28 21:17:19,059 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:19,071 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:19,071 : [INFO] - Reporting: Total messages ingested this session:14
+2019-10-28 21:17:19,071 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:19,072 : [INFO] - Reporting: Time taken for ingestion was 0.011143922805786133
+2019-10-28 21:17:19,161 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:19,173 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:19,174 : [INFO] - Reporting: Total messages ingested this session:15
+2019-10-28 21:17:19,174 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:19,174 : [INFO] - Reporting: Time taken for ingestion was 0.011366128921508789
+2019-10-28 21:17:19,263 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:19,274 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:19,275 : [INFO] - Reporting: Total messages ingested this session:16
+2019-10-28 21:17:19,275 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:19,275 : [INFO] - Reporting: Time taken for ingestion was 0.010457515716552734
+2019-10-28 21:17:19,367 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:19,379 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:19,380 : [INFO] - Reporting: Total messages ingested this session:17
+2019-10-28 21:17:19,380 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:19,380 : [INFO] - Reporting: Time taken for ingestion was 0.012311458587646484
+2019-10-28 21:17:19,469 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:19,480 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:19,481 : [INFO] - Reporting: Total messages ingested this session:18
+2019-10-28 21:17:19,481 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:19,481 : [INFO] - Reporting: Time taken for ingestion was 0.010857343673706055
+2019-10-28 21:17:19,571 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:19,582 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:19,583 : [INFO] - Reporting: Total messages ingested this session:19
+2019-10-28 21:17:19,583 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:19,583 : [INFO] - Reporting: Time taken for ingestion was 0.011060953140258789
+2019-10-28 21:17:19,673 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:19,685 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:19,685 : [INFO] - Reporting: Total messages ingested this session:20
+2019-10-28 21:17:19,685 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:19,685 : [INFO] - Reporting: Time taken for ingestion was 0.0109100341796875
+2019-10-28 21:17:19,776 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:19,789 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:19,789 : [INFO] - Reporting: Total messages ingested this session:21
+2019-10-28 21:17:19,790 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:19,790 : [INFO] - Reporting: Time taken for ingestion was 0.012141227722167969
+2019-10-28 21:17:19,878 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:19,890 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:19,890 : [INFO] - Reporting: Total messages ingested this session:22
+2019-10-28 21:17:19,891 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:19,891 : [INFO] - Reporting: Time taken for ingestion was 0.011240482330322266
+2019-10-28 21:17:19,980 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:19,991 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:19,992 : [INFO] - Reporting: Total messages ingested this session:23
+2019-10-28 21:17:19,992 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:19,992 : [INFO] - Reporting: Time taken for ingestion was 0.010928630828857422
+2019-10-28 21:17:20,082 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:20,094 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:20,094 : [INFO] - Reporting: Total messages ingested this session:24
+2019-10-28 21:17:20,094 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:20,095 : [INFO] - Reporting: Time taken for ingestion was 0.010935306549072266
+2019-10-28 21:17:20,185 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:20,197 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:20,197 : [INFO] - Reporting: Total messages ingested this session:25
+2019-10-28 21:17:20,197 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:20,198 : [INFO] - Reporting: Time taken for ingestion was 0.011304855346679688
+2019-10-28 21:17:20,287 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:20,299 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:20,299 : [INFO] - Reporting: Total messages ingested this session:26
+2019-10-28 21:17:20,300 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:20,300 : [INFO] - Reporting: Time taken for ingestion was 0.011563539505004883
+2019-10-28 21:17:20,389 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:20,401 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:20,401 : [INFO] - Reporting: Total messages ingested this session:27
+2019-10-28 21:17:20,401 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:20,402 : [INFO] - Reporting: Time taken for ingestion was 0.01107645034790039
+2019-10-28 21:17:20,491 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:20,502 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:20,503 : [INFO] - Reporting: Total messages ingested this session:28
+2019-10-28 21:17:20,503 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:20,503 : [INFO] - Reporting: Time taken for ingestion was 0.010952234268188477
+2019-10-28 21:17:20,593 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:20,605 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:20,605 : [INFO] - Reporting: Total messages ingested this session:29
+2019-10-28 21:17:20,606 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:20,606 : [INFO] - Reporting: Time taken for ingestion was 0.011213541030883789
+2019-10-28 21:17:20,695 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:17:20,707 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:17:20,708 : [INFO] - Reporting: Total messages ingested this session:30
+2019-10-28 21:17:20,708 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:17:20,708 : [INFO] - Reporting: Time taken for ingestion was 0.011569499969482422
+2019-10-28 21:18:13,991 : [INFO] - Connected to localhost with result code 0.
+2019-10-28 21:18:13,991 : [INFO] - Subscribed to topic topic/big_data_c2dcc on localhost
+2019-10-28 21:18:18,147 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:18:18,160 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:18:18,161 : [INFO] - Reporting: Total messages ingested this session:1
+2019-10-28 21:18:18,161 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:18:18,162 : [INFO] - Reporting: Time taken for ingestion was 0.012415170669555664
+2019-10-28 21:18:18,249 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:18:18,261 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:18:18,261 : [INFO] - Reporting: Total messages ingested this session:2
+2019-10-28 21:18:18,261 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:18:18,262 : [INFO] - Reporting: Time taken for ingestion was 0.010736942291259766
+2019-10-28 21:18:18,352 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:18:18,364 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:18:18,364 : [INFO] - Reporting: Total messages ingested this session:3
+2019-10-28 21:18:18,365 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:18:18,365 : [INFO] - Reporting: Time taken for ingestion was 0.011566400527954102
+2019-10-28 21:18:18,454 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:18:18,466 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:18:18,466 : [INFO] - Reporting: Total messages ingested this session:4
+2019-10-28 21:18:18,467 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:18:18,467 : [INFO] - Reporting: Time taken for ingestion was 0.011458635330200195
+2019-10-28 21:18:18,556 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:18:18,573 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:18:18,574 : [INFO] - Reporting: Total messages ingested this session:5
+2019-10-28 21:18:18,574 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:18:18,575 : [INFO] - Reporting: Time taken for ingestion was 0.01598978042602539
+2019-10-28 21:18:18,659 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:18:18,671 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:18:18,671 : [INFO] - Reporting: Total messages ingested this session:6
+2019-10-28 21:18:18,671 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:18:18,672 : [INFO] - Reporting: Time taken for ingestion was 0.01172947883605957
+2019-10-28 21:18:18,761 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:18:18,772 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:18:18,772 : [INFO] - Reporting: Total messages ingested this session:7
+2019-10-28 21:18:18,773 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:18:18,773 : [INFO] - Reporting: Time taken for ingestion was 0.010689735412597656
+2019-10-28 21:18:18,864 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:18:18,877 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:18:18,877 : [INFO] - Reporting: Total messages ingested this session:8
+2019-10-28 21:18:18,877 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:18:18,878 : [INFO] - Reporting: Time taken for ingestion was 0.012739181518554688
+2019-10-28 21:18:18,966 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:18:18,977 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:18:18,978 : [INFO] - Reporting: Total messages ingested this session:9
+2019-10-28 21:18:18,978 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:18:18,978 : [INFO] - Reporting: Time taken for ingestion was 0.011247396469116211
+2019-10-28 21:18:19,068 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:18:19,080 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:18:19,080 : [INFO] - Reporting: Total messages ingested this session:10
+2019-10-28 21:18:19,081 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:18:19,081 : [INFO] - Reporting: Time taken for ingestion was 0.01184701919555664
+2019-10-28 21:18:19,170 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:18:19,182 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:18:19,182 : [INFO] - Reporting: Total messages ingested this session:11
+2019-10-28 21:18:19,182 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:18:19,183 : [INFO] - Reporting: Time taken for ingestion was 0.011368989944458008
+2019-10-28 21:18:19,272 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:18:19,284 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:18:19,284 : [INFO] - Reporting: Total messages ingested this session:12
+2019-10-28 21:18:19,285 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:18:19,285 : [INFO] - Reporting: Time taken for ingestion was 0.011250019073486328
+2019-10-28 21:18:19,374 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:18:19,385 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:18:19,386 : [INFO] - Reporting: Total messages ingested this session:13
+2019-10-28 21:18:19,386 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:18:19,386 : [INFO] - Reporting: Time taken for ingestion was 0.010648965835571289
+2019-10-28 21:18:19,477 : [INFO] - Received message for client_1. start the ingestion of data into the database.
+2019-10-28 21:18:19,491 : [INFO] - DaTA SUCCESSFULLY INGESTED.
+2019-10-28 21:18:19,491 : [INFO] - Reporting: Total messages ingested this session:14
+2019-10-28 21:18:19,492 : [INFO] - Reporting: Size of this mesage was :51
+2019-10-28 21:18:19,492 : [INFO] - Reporting: Time taken for ingestion was 0.013423681259155273

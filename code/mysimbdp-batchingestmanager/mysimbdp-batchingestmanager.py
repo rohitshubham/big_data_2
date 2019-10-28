@@ -45,11 +45,10 @@ def call_relevent_client_application(client_id):
 
 
 
-# We are using free eclipse broker for notifying that a file has been moved into staging
+# We are using mosquitto broker for notifying that a file has been moved into staging
 #the batchingingestmanager will take action when it receives data on the topic.
-# Please note: this is only for notification service of batchingingestmanager and it uses a public mqtt broker.
-# mysimbdp-data-broker is implemented separately. 
-broker_url = "mqtt.eclipse.org"
+# Please note: this is only for notification service of batchingingestmanager and it uses a mosquitto broker.
+broker_url = "localhost"
 broker_port = 1883
 
 #topic-name = "big_data_" + truncate(sha256("big_data"), 5)

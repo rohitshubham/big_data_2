@@ -1,10 +1,10 @@
-2019-10-27 17:50:12,152 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 17:50:12,152 : [INFO] - Connected to localhost with result code 0.
 2019-10-27 17:50:34,993 : [INFO] - Received ingestion message for clientID: <built-in method decode of bytes object at 0x7f6439487600>. Proceeding to call respective client script.
-2019-10-27 17:53:07,363 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 17:53:07,363 : [INFO] - Connected to localhost with result code 0.
 2019-10-27 17:53:13,407 : [INFO] - Received ingestion message for clientID: <built-in method decode of bytes object at 0x7fa3701cf330>. Proceeding to call respective client script.
-2019-10-27 17:54:26,516 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 17:54:26,516 : [INFO] - Connected to localhost with result code 0.
 2019-10-27 17:54:32,050 : [INFO] - Received ingestion message for clientID: Hello world!. Proceeding to call respective client script.
-2019-10-27 17:56:59,912 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 17:56:59,912 : [INFO] - Connected to localhost with result code 0.
 2019-10-27 17:57:07,290 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
 2019-10-27 17:57:07,291 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
 2019-10-27 17:57:20,883 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
@@ -14,7 +14,7 @@
     raise TypeError("bufsize must be an integer")
 TypeError: bufsize must be an integer
 
-2019-10-27 17:58:10,385 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 17:58:10,385 : [INFO] - Connected to localhost with result code 0.
 2019-10-27 17:58:14,103 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
 2019-10-27 17:58:14,104 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
 2019-10-27 17:58:17,902 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
@@ -24,7 +24,7 @@ TypeError: bufsize must be an integer
     raise TypeError("bufsize must be an integer")
 TypeError: bufsize must be an integer
 
-2019-10-27 17:58:43,029 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 17:58:43,029 : [INFO] - Connected to localhost with result code 0.
 2019-10-27 17:58:45,707 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
 2019-10-27 17:58:45,708 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
 2019-10-27 17:58:48,960 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
@@ -36,7 +36,7 @@ TypeError: bufsize must be an integer
     raise child_exception_type(errno_num, err_msg, err_filename)
 PermissionError: [Errno 13] Permission denied: './clientbatchingestapp/company_1_clientbatchingestapp.py'
 
-2019-10-27 18:01:05,263 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 18:01:05,263 : [INFO] - Connected to localhost with result code 0.
 2019-10-27 18:01:18,019 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
 2019-10-27 18:01:18,019 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
 2019-10-27 18:01:18,019 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
@@ -50,7 +50,7 @@ PermissionError: [Errno 13] Permission denied: './clientbatchingestapp/company_1
     raise child_exception_type(errno_num, err_msg, err_filename)
 PermissionError: [Errno 13] Permission denied: './clientbatchingestapp/company_1_clientbatchingestapp.py'
 
-2019-10-27 18:01:35,572 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 18:01:35,572 : [INFO] - Connected to localhost with result code 0.
 2019-10-27 18:01:40,184 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
 2019-10-27 18:01:40,184 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
 2019-10-27 18:01:40,189 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
@@ -62,7 +62,7 @@ PermissionError: [Errno 13] Permission denied: './clientbatchingestapp/company_1
     raise child_exception_type(errno_num, err_msg, err_filename)
 PermissionError: [Errno 13] Permission denied: './clientbatchingestapp/company_1_clientbatchingestapp.py'
 
-2019-10-27 18:02:26,363 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 18:02:26,363 : [INFO] - Connected to localhost with result code 0.
 2019-10-27 18:02:32,723 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
 2019-10-27 18:02:32,723 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
 2019-10-27 18:02:32,730 : [ERROR] - error while running file for clientID: 1. Error is Traceback (most recent call last):
@@ -85,15 +85,15 @@ OSError: [Errno 8] Exec format error: './clientbatchingestapp/company_1_clientba
     raise child_exception_type(errno_num, err_msg, err_filename)
 FileNotFoundError: [Errno 2] No such file or directory: './clientbatchingestapp/company_1_clientbatchingestapp.py': './clientbatchingestapp/company_1_clientbatchingestapp.py'
 
-2019-10-27 18:17:04,647 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
-2019-10-27 18:21:02,129 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 18:17:04,647 : [INFO] - Connected to localhost with result code 0.
+2019-10-27 18:21:02,129 : [INFO] - Connected to localhost with result code 0.
 2019-10-27 18:21:14,511 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
 2019-10-27 18:21:14,512 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
 2019-10-27 18:21:14,515 : [INFO] - Started clientbatchingestapp for clientID : 1.
 2019-10-27 18:23:15,439 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
 2019-10-27 18:23:15,440 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
 2019-10-27 18:23:15,443 : [INFO] - Started clientbatchingestapp for clientID : 1.
-2019-10-27 18:34:33,508 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 18:34:33,508 : [INFO] - Connected to localhost with result code 0.
 2019-10-27 18:34:38,289 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
 2019-10-27 18:34:38,289 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
 2019-10-27 18:34:38,292 : [INFO] - Started clientbatchingestapp for clientID : 1.
@@ -106,7 +106,7 @@ FileNotFoundError: [Errno 2] No such file or directory: './clientbatchingestapp/
 2019-10-27 18:45:12,258 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
 2019-10-27 18:45:12,258 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
 2019-10-27 18:45:12,264 : [INFO] - Started clientbatchingestapp for clientID : 1.
-2019-10-27 19:55:45,024 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-27 19:55:45,024 : [INFO] - Connected to localhost with result code 0.
 2019-10-27 20:01:15,739 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
 2019-10-27 20:01:15,739 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
 2019-10-27 20:01:15,742 : [INFO] - Started clientbatchingestapp for clientID : 1.
@@ -143,7 +143,7 @@ FileNotFoundError: [Errno 2] No such file or directory: './clientbatchingestapp/
 2019-10-27 20:40:47,236 : [INFO] - Received ingestion message for clientID: 1. Proceeding to call respective client script.
 2019-10-27 20:40:47,236 : [INFO] - running company_1_clientbatchingestapp.py for ClientID: 1
 2019-10-27 20:40:47,240 : [INFO] - Started clientbatchingestapp for clientID : 1.
-2019-10-28 01:14:19,284 : [INFO] - Connected to mqtt.eclipse.org with result code 0.
+2019-10-28 01:14:19,284 : [INFO] - Connected to localhost with result code 0.
 2019-10-28 01:14:49,071 : [INFO] - Received ingestion message for clientID: 2. Proceeding to call respective client script.
 2019-10-28 01:14:49,072 : [INFO] - running company_2_clientbatchingestapp.py for ClientID: 2
 2019-10-28 01:14:49,075 : [INFO] - Started clientbatchingestapp for clientID : 2.
@@ -183,3 +183,4 @@ FileNotFoundError: [Errno 2] No such file or directory: './clientbatchingestapp/
 2019-10-28 01:40:46,149 : [INFO] - Received ingestion message for clientID: 2. Proceeding to call respective client script.
 2019-10-28 01:40:46,149 : [INFO] - running company_2_clientbatchingestapp.py for ClientID: 2
 2019-10-28 01:40:46,150 : [INFO] - Started clientbatchingestapp for clientID : 2.
+2019-10-28 19:59:32,406 : [INFO] - Connected to localhost with result code 0.
