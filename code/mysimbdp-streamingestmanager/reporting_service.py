@@ -17,7 +17,7 @@ max_number_of_messages = 6000000
 
 
 
-topic_reporting = "topic/big_data_reporting_c2dcc"
+topic_reporting = "topic/big_data_reporting"
 broker_url = "localhost"
 broker_port = 1883
 

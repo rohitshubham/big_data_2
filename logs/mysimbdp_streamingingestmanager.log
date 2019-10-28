@@ -96,3 +96,28 @@ TypeError: %d format: a number is required, not str
 2019-10-28 21:18:27,051 : [INFO] - argument validation passed. Proceeding to invoke scripts.
 2019-10-28 21:18:27,051 : [INFO] - attempting to stop process for client1
 2019-10-28 21:18:27,056 : [INFO] - ProcessID: successfully killled the process for client1. The pID killed was 13260 
+2019-10-29 00:28:40,071 : [ERROR] - The argument is not correct. Please try again.
+2019-10-29 00:29:21,290 : [ERROR] - The argument is not correct. Please try again.
+2019-10-29 00:30:00,676 : [ERROR] - The argument is not correct. Please try agaiN.
+2019-10-29 00:31:51,848 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-29 00:31:51,850 : [INFO] - ProcessID : Started the process with PID: 9217. Remember to use it to kill the process.
+2019-10-29 00:32:32,958 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-29 00:32:32,960 : [INFO] - ProcessID : Started the process with PID: 9397. Remember to use it to kill the process.
+2019-10-29 00:38:49,046 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-29 00:38:49,048 : [INFO] - ProcessID : Started the process with PID: 9821. Remember to use it to kill the process.
+2019-10-29 00:40:45,281 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-29 00:40:45,281 : [INFO] - attempting to stop process for client2
+2019-10-29 00:40:45,290 : [INFO] - ProcessID: successfully killled the process for client2. The pID killed was 9397 
+2019-10-29 00:40:50,596 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-29 00:40:50,596 : [INFO] - attempting to stop process for client2
+2019-10-29 00:40:50,600 : [INFO] - ProcessID: successfully killled the process for client2. The pID killed was 9821 
+2019-10-29 00:41:00,445 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-29 00:41:00,447 : [INFO] - ProcessID : Started the process with PID: 12271. Remember to use it to kill the process.
+2019-10-29 00:44:00,206 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-29 00:44:00,206 : [INFO] - attempting to stop process for client2
+2019-10-29 00:44:00,211 : [INFO] - ProcessID: successfully killled the process for client2. The pID killed was 12271 
+2019-10-29 00:44:03,722 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-29 00:44:03,724 : [INFO] - ProcessID : Started the process with PID: 13707. Remember to use it to kill the process.
+2019-10-29 00:45:09,869 : [INFO] - argument validation passed. Proceeding to invoke scripts.
+2019-10-29 00:45:09,869 : [INFO] - attempting to stop process for client2
+2019-10-29 00:45:09,875 : [INFO] - ProcessID: successfully killled the process for client2. The pID killed was 13707 

@@ -16,17 +16,20 @@ logging.basicConfig(filename= "../../logs/mysimbdp_streamingingestmanager.log" ,
 arguments = sys.argv[1:]
 argument_action = arguments[1]
 argument_name = arguments[0]
-argument_pid = arguments[2]
+if arguments[2]:
+    argument_pid = arguments[2]
+else:
+    argument_pid = 0
 
 clientbatchstagingappfolder = "./clientstreamingestapp/"
 
 #only validating client1 and client2 at the moment.
 def validate_command_arguments(argument_name, argument_pid, argument_action):
     if argument_action not in ["start", "stop"]:
-        logging.error(f"The argument is not correct. Please try again.")
+        logging.error(f"The argument is not correct. Please try agaiN.")
         return 0
     if argument_name not in ["client1", "client2"]:
-        logging.error(f"The argument is not correct. Please try again.")
+        logging.error(f"The argument is not correct. Please try agaIn.")
         return 0
     if argument_action == "stop":
         try:
