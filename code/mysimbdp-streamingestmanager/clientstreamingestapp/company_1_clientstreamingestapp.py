@@ -63,7 +63,7 @@ def send_mqtt_requests(payload):
 def reporting_data():
     global last_reported_messages, avg_processing_time, total_messages, last_time_sent, total_ingestion_data_size
     if time.time() - last_time_sent > 60:
-        send_mqtt_requests([avg_processing_time, total_messages-last_reported_messages, total_ingestion_data_size])
+        send_mqtt_requests(["client1", avg_processing_time, total_messages-last_reported_messages, total_ingestion_data_size])
         total_ingestion_data_size = 0
         avg_processing_time = 0
         last_time_sent = time.time()        
