@@ -1,0 +1,497 @@
+1572259195: mosquitto version 1.6.7 starting
+1572259195: Config loaded from /mosquitto/config/mosquitto.conf.
+1572259195: Opening ipv4 listen socket on port 1883.
+1572259195: Opening ipv6 listen socket on port 1883.
+^C1572259200: mosquitto version 1.6.7 terminating
+1572269277: mosquitto version 1.6.7 starting
+1572269277: Config loaded from /mosquitto/config/mosquitto.conf.
+1572269277: Opening ipv4 listen socket on port 1883.
+1572269277: Opening ipv6 listen socket on port 1883.
+1572285442: mosquitto version 1.6.7 starting
+1572285442: Config loaded from /mosquitto/config/mosquitto.conf.
+1572285442: Opening ipv4 listen socket on port 1883.
+1572285442: Opening ipv6 listen socket on port 1883.
+1572285550: New connection from 172.17.0.1 on port 1883.
+1572285550: New client connected from 172.17.0.1 as auto-7C3D7923-79F4-AF06-7DFF-F5A358172A0B (p2, c1, k60).
+1572285550: Client auto-7C3D7923-79F4-AF06-7DFF-F5A358172A0B disconnected.
+1572285572: New connection from 172.17.0.1 on port 1883.
+1572285572: New client connected from 172.17.0.1 as auto-AE0C30AD-95BF-8E9B-4E43-11C5B4EA29A1 (p2, c1, k60).
+1572285572: Socket error on client auto-AE0C30AD-95BF-8E9B-4E43-11C5B4EA29A1, disconnecting.
+1572285572: New connection from 172.17.0.1 on port 1883.
+1572285572: New client connected from 172.17.0.1 as auto-D84E31F4-3FFC-EEF9-F94F-3BD5E4DBA6F4 (p2, c1, k60).
+1572285588: Socket error on client auto-D84E31F4-3FFC-EEF9-F94F-3BD5E4DBA6F4, disconnecting.
+1572289725: New connection from 172.17.0.1 on port 1883.
+1572289725: New client connected from 172.17.0.1 as auto-8484C3AA-02D7-7382-40CC-B22440DD3EB0 (p2, c1, k60).
+1572289725: Client auto-8484C3AA-02D7-7382-40CC-B22440DD3EB0 disconnected.
+1572289725: New connection from 172.17.0.1 on port 1883.
+1572289725: New client connected from 172.17.0.1 as auto-9892A7B4-AFB7-A55F-30C6-3F191608C9EF (p2, c1, k60).
+1572289725: Client auto-9892A7B4-AFB7-A55F-30C6-3F191608C9EF disconnected.
+1572289725: New connection from 172.17.0.1 on port 1883.
+1572289725: New client connected from 172.17.0.1 as auto-D8DBEDB1-9B65-531E-D7A2-C7946C47E62A (p2, c1, k60).
+1572289725: Client auto-D8DBEDB1-9B65-531E-D7A2-C7946C47E62A disconnected.
+1572289725: New connection from 172.17.0.1 on port 1883.
+1572289725: New client connected from 172.17.0.1 as auto-FC425C53-CF55-C08F-594A-AA18223D2337 (p2, c1, k60).
+1572289725: Client auto-FC425C53-CF55-C08F-594A-AA18223D2337 disconnected.
+1572289725: New connection from 172.17.0.1 on port 1883.
+1572289725: New client connected from 172.17.0.1 as auto-00F2CD43-1EBC-9985-253A-C6E477DDFF46 (p2, c1, k60).
+1572289725: Client auto-00F2CD43-1EBC-9985-253A-C6E477DDFF46 disconnected.
+1572289725: New connection from 172.17.0.1 on port 1883.
+1572289725: New client connected from 172.17.0.1 as auto-54CCA126-1673-FF75-B837-135471659725 (p2, c1, k60).
+1572289725: Client auto-54CCA126-1673-FF75-B837-135471659725 disconnected.
+1572289725: New connection from 172.17.0.1 on port 1883.
+1572289725: New client connected from 172.17.0.1 as auto-E701C06D-89F6-423D-7194-7C53757F3EE5 (p2, c1, k60).
+1572289725: Client auto-E701C06D-89F6-423D-7194-7C53757F3EE5 disconnected.
+1572289725: New connection from 172.17.0.1 on port 1883.
+1572289725: New client connected from 172.17.0.1 as auto-67D5A8BB-80E2-99B4-ACC8-6B2237D08B6D (p2, c1, k60).
+1572289725: Client auto-67D5A8BB-80E2-99B4-ACC8-6B2237D08B6D disconnected.
+1572289725: New connection from 172.17.0.1 on port 1883.
+1572289725: New client connected from 172.17.0.1 as auto-F7F3123A-1AF1-CEB4-75FE-D0358DD32489 (p2, c1, k60).
+1572289725: Client auto-F7F3123A-1AF1-CEB4-75FE-D0358DD32489 disconnected.
+1572289726: New connection from 172.17.0.1 on port 1883.
+1572289726: New client connected from 172.17.0.1 as auto-7A90ADD9-9AF4-06FB-FFAB-52B5815700EF (p2, c1, k60).
+1572289726: Client auto-7A90ADD9-9AF4-06FB-FFAB-52B5815700EF disconnected.
+1572289726: New connection from 172.17.0.1 on port 1883.
+1572289726: New client connected from 172.17.0.1 as auto-C9301C88-6C9E-5DE7-0BE4-7CD4880BC8E4 (p2, c1, k60).
+1572289726: Client auto-C9301C88-6C9E-5DE7-0BE4-7CD4880BC8E4 disconnected.
+1572289726: New connection from 172.17.0.1 on port 1883.
+1572289726: New client connected from 172.17.0.1 as auto-00FD89D6-4429-0F0C-2ED9-14C46AD1B0B7 (p2, c1, k60).
+1572289726: Client auto-00FD89D6-4429-0F0C-2ED9-14C46AD1B0B7 disconnected.
+1572289726: New connection from 172.17.0.1 on port 1883.
+1572289726: New client connected from 172.17.0.1 as auto-66CAB609-EEE5-AD47-4DFB-749B525E861F (p2, c1, k60).
+1572289726: Client auto-66CAB609-EEE5-AD47-4DFB-749B525E861F disconnected.
+1572289863: New connection from 172.17.0.1 on port 1883.
+1572289863: New client connected from 172.17.0.1 as auto-432D6314-7076-DD94-E8E0-1CE0F7440141 (p2, c1, k60).
+1572289863: Socket error on client auto-432D6314-7076-DD94-E8E0-1CE0F7440141, disconnecting.
+1572289863: New connection from 172.17.0.1 on port 1883.
+1572289863: New client connected from 172.17.0.1 as auto-37F96D5A-31EA-2B77-5726-1F1205D8E918 (p2, c1, k60).
+1572289871: Socket error on client auto-37F96D5A-31EA-2B77-5726-1F1205D8E918, disconnecting.
+1572289958: New connection from 172.17.0.1 on port 1883.
+1572289958: New client connected from 172.17.0.1 as auto-F558AAF2-BDEA-AEF9-F305-A201EFC765AD (p2, c1, k60).
+1572289958: Socket error on client auto-F558AAF2-BDEA-AEF9-F305-A201EFC765AD, disconnecting.
+1572289958: New connection from 172.17.0.1 on port 1883.
+1572289958: New client connected from 172.17.0.1 as auto-1478663F-1CDA-BD9B-BE35-E2CE183A6102 (p2, c1, k60).
+1572289984: New connection from 172.17.0.1 on port 1883.
+1572289984: New client connected from 172.17.0.1 as auto-02096A29-0962-AD22-3259-447F07698F64 (p2, c1, k60).
+1572289984: Client auto-02096A29-0962-AD22-3259-447F07698F64 disconnected.
+1572289985: New connection from 172.17.0.1 on port 1883.
+1572289985: New client connected from 172.17.0.1 as auto-D83C4B14-A372-8ED4-E3BC-FC2A48A5C34B (p2, c1, k60).
+1572289985: Client auto-D83C4B14-A372-8ED4-E3BC-FC2A48A5C34B disconnected.
+1572289985: New connection from 172.17.0.1 on port 1883.
+1572289985: New client connected from 172.17.0.1 as auto-D57CFAC7-7479-2739-92E7-20711DB99A34 (p2, c1, k60).
+1572289985: Client auto-D57CFAC7-7479-2739-92E7-20711DB99A34 disconnected.
+1572289985: New connection from 172.17.0.1 on port 1883.
+1572289985: New client connected from 172.17.0.1 as auto-98676BAF-75FD-F6E8-2168-0951E7B26BA7 (p2, c1, k60).
+1572289985: Client auto-98676BAF-75FD-F6E8-2168-0951E7B26BA7 disconnected.
+1572289985: New connection from 172.17.0.1 on port 1883.
+1572289985: New client connected from 172.17.0.1 as auto-B7584898-79B5-1694-D714-164D7B57C1E7 (p2, c1, k60).
+1572289985: Client auto-B7584898-79B5-1694-D714-164D7B57C1E7 disconnected.
+1572289985: New connection from 172.17.0.1 on port 1883.
+1572289985: New client connected from 172.17.0.1 as auto-E02F18E6-D2D3-8879-3596-FE3409719DBA (p2, c1, k60).
+1572289985: Client auto-E02F18E6-D2D3-8879-3596-FE3409719DBA disconnected.
+1572289985: New connection from 172.17.0.1 on port 1883.
+1572289985: New client connected from 172.17.0.1 as auto-07521DBA-3916-3464-A63A-20C13CAA584E (p2, c1, k60).
+1572289985: Client auto-07521DBA-3916-3464-A63A-20C13CAA584E disconnected.
+1572289985: New connection from 172.17.0.1 on port 1883.
+1572289985: New client connected from 172.17.0.1 as auto-046B9925-060F-7DF4-82FE-12D1D58742CF (p2, c1, k60).
+1572289985: Client auto-046B9925-060F-7DF4-82FE-12D1D58742CF disconnected.
+1572289985: New connection from 172.17.0.1 on port 1883.
+1572289985: New client connected from 172.17.0.1 as auto-D27B64BF-5741-8CB6-22FA-A4B6A92ADEA7 (p2, c1, k60).
+1572289985: Client auto-D27B64BF-5741-8CB6-22FA-A4B6A92ADEA7 disconnected.
+1572289985: New connection from 172.17.0.1 on port 1883.
+1572289985: New client connected from 172.17.0.1 as auto-CDF97D4F-662C-E836-A0B5-A016CF82BEAC (p2, c1, k60).
+1572289985: Client auto-CDF97D4F-662C-E836-A0B5-A016CF82BEAC disconnected.
+1572289986: New connection from 172.17.0.1 on port 1883.
+1572289986: New client connected from 172.17.0.1 as auto-F4B252B3-6EFC-DA67-12C0-86DAD9A9B445 (p2, c1, k60).
+1572289986: Client auto-F4B252B3-6EFC-DA67-12C0-86DAD9A9B445 disconnected.
+1572290087: New connection from 172.17.0.1 on port 1883.
+1572290087: New client connected from 172.17.0.1 as auto-EC6993BE-06D8-3DCD-9A06-4A3605CD7203 (p2, c1, k60).
+1572290087: Client auto-EC6993BE-06D8-3DCD-9A06-4A3605CD7203 disconnected.
+1572290087: New connection from 172.17.0.1 on port 1883.
+1572290087: New client connected from 172.17.0.1 as auto-56715453-F43D-0C25-9291-82E05B89B013 (p2, c1, k60).
+1572290087: Client auto-56715453-F43D-0C25-9291-82E05B89B013 disconnected.
+1572290087: New connection from 172.17.0.1 on port 1883.
+1572290087: New client connected from 172.17.0.1 as auto-AF9A2200-1BA3-0E94-D48A-3C333D7D66F3 (p2, c1, k60).
+1572290087: Client auto-AF9A2200-1BA3-0E94-D48A-3C333D7D66F3 disconnected.
+1572290087: New connection from 172.17.0.1 on port 1883.
+1572290087: New client connected from 172.17.0.1 as auto-B17E188A-FC2F-8446-1D47-31623F3E93CD (p2, c1, k60).
+1572290087: Client auto-B17E188A-FC2F-8446-1D47-31623F3E93CD disconnected.
+1572290088: New connection from 172.17.0.1 on port 1883.
+1572290088: New client connected from 172.17.0.1 as auto-2CF00E1A-CBEA-9129-611B-3D1E3546A353 (p2, c1, k60).
+1572290088: Client auto-2CF00E1A-CBEA-9129-611B-3D1E3546A353 disconnected.
+1572290088: New connection from 172.17.0.1 on port 1883.
+1572290088: New client connected from 172.17.0.1 as auto-9421C26E-0C1A-F94E-03B8-205D89E9DCFB (p2, c1, k60).
+1572290088: Client auto-9421C26E-0C1A-F94E-03B8-205D89E9DCFB disconnected.
+1572290088: New connection from 172.17.0.1 on port 1883.
+1572290088: New client connected from 172.17.0.1 as auto-4E4EA144-51E3-85AF-DB21-EF0E9324FF18 (p2, c1, k60).
+1572290088: Client auto-4E4EA144-51E3-85AF-DB21-EF0E9324FF18 disconnected.
+1572290088: New connection from 172.17.0.1 on port 1883.
+1572290088: New client connected from 172.17.0.1 as auto-AEAC64DF-7039-508B-0A56-3B1C07750351 (p2, c1, k60).
+1572290088: Client auto-AEAC64DF-7039-508B-0A56-3B1C07750351 disconnected.
+1572290088: New connection from 172.17.0.1 on port 1883.
+1572290088: New client connected from 172.17.0.1 as auto-9D666768-A877-09C3-19B0-63FAE6CB6A1A (p2, c1, k60).
+1572290088: Client auto-9D666768-A877-09C3-19B0-63FAE6CB6A1A disconnected.
+1572290088: New connection from 172.17.0.1 on port 1883.
+1572290088: New client connected from 172.17.0.1 as auto-0C75353A-C22D-631B-DD84-B358D5A283CF (p2, c1, k60).
+1572290088: Client auto-0C75353A-C22D-631B-DD84-B358D5A283CF disconnected.
+1572290088: New connection from 172.17.0.1 on port 1883.
+1572290088: New client connected from 172.17.0.1 as auto-9556650E-B55B-8C5B-A487-F50F47A55C45 (p2, c1, k60).
+1572290088: Client auto-9556650E-B55B-8C5B-A487-F50F47A55C45 disconnected.
+1572290088: New connection from 172.17.0.1 on port 1883.
+1572290088: New client connected from 172.17.0.1 as auto-612981FE-5DF7-D086-1A16-1DE4BC2AA429 (p2, c1, k60).
+1572290088: Client auto-612981FE-5DF7-D086-1A16-1DE4BC2AA429 disconnected.
+1572290088: New connection from 172.17.0.1 on port 1883.
+1572290088: New client connected from 172.17.0.1 as auto-A1226F72-5959-DBBD-004E-1A2E64CCD584 (p2, c1, k60).
+1572290088: Client auto-A1226F72-5959-DBBD-004E-1A2E64CCD584 disconnected.
+1572290088: New connection from 172.17.0.1 on port 1883.
+1572290088: New client connected from 172.17.0.1 as auto-70C3E16B-049E-735C-1A33-C35C973EC808 (p2, c1, k60).
+1572290088: Client auto-70C3E16B-049E-735C-1A33-C35C973EC808 disconnected.
+1572290089: New connection from 172.17.0.1 on port 1883.
+1572290089: New client connected from 172.17.0.1 as auto-5BAD4FD4-BB5E-F26A-3790-2460465116E6 (p2, c1, k60).
+1572290089: Client auto-5BAD4FD4-BB5E-F26A-3790-2460465116E6 disconnected.
+1572290089: New connection from 172.17.0.1 on port 1883.
+1572290089: New client connected from 172.17.0.1 as auto-59F07F70-3E48-F097-2634-8CAD53E31D1F (p2, c1, k60).
+1572290089: Client auto-59F07F70-3E48-F097-2634-8CAD53E31D1F disconnected.
+1572290089: New connection from 172.17.0.1 on port 1883.
+1572290089: New client connected from 172.17.0.1 as auto-DFFAE581-9EA8-799B-36E6-0093A6951864 (p2, c1, k60).
+1572290089: Client auto-DFFAE581-9EA8-799B-36E6-0093A6951864 disconnected.
+1572290089: New connection from 172.17.0.1 on port 1883.
+1572290089: New client connected from 172.17.0.1 as auto-21AB2127-1F5A-28F2-1F1C-539A4DDDF1F0 (p2, c1, k60).
+1572290089: Client auto-21AB2127-1F5A-28F2-1F1C-539A4DDDF1F0 disconnected.
+1572290089: New connection from 172.17.0.1 on port 1883.
+1572290089: New client connected from 172.17.0.1 as auto-29DAAE5E-0D36-6906-C60E-406313572676 (p2, c1, k60).
+1572290089: Client auto-29DAAE5E-0D36-6906-C60E-406313572676 disconnected.
+1572290089: New connection from 172.17.0.1 on port 1883.
+1572290089: New client connected from 172.17.0.1 as auto-FAC3C9BB-0651-9E16-5AEC-E561B89045C8 (p2, c1, k60).
+1572290089: Client auto-FAC3C9BB-0651-9E16-5AEC-E561B89045C8 disconnected.
+1572290089: New connection from 172.17.0.1 on port 1883.
+1572290089: New client connected from 172.17.0.1 as auto-ED1AA3C1-EE45-CBC5-F3C3-E5CB4A549326 (p2, c1, k60).
+1572290089: Client auto-ED1AA3C1-EE45-CBC5-F3C3-E5CB4A549326 disconnected.
+1572290089: New connection from 172.17.0.1 on port 1883.
+1572290089: New client connected from 172.17.0.1 as auto-0A21053A-F9DC-3698-0D3D-1133DE15AD94 (p2, c1, k60).
+1572290089: Client auto-0A21053A-F9DC-3698-0D3D-1133DE15AD94 disconnected.
+1572290089: New connection from 172.17.0.1 on port 1883.
+1572290089: New client connected from 172.17.0.1 as auto-E6F8FB8A-021B-B9EF-4D58-10A7B03F1DB4 (p2, c1, k60).
+1572290089: Client auto-E6F8FB8A-021B-B9EF-4D58-10A7B03F1DB4 disconnected.
+1572290089: New connection from 172.17.0.1 on port 1883.
+1572290089: New client connected from 172.17.0.1 as auto-4C5941AA-E868-1964-F2E3-882450044529 (p2, c1, k60).
+1572290089: Client auto-4C5941AA-E868-1964-F2E3-882450044529 disconnected.
+1572290090: New connection from 172.17.0.1 on port 1883.
+1572290090: New client connected from 172.17.0.1 as auto-EAAA5DF5-DE3E-AA9F-61F0-6DDC1054E82C (p2, c1, k60).
+1572290090: Client auto-EAAA5DF5-DE3E-AA9F-61F0-6DDC1054E82C disconnected.
+1572290090: New connection from 172.17.0.1 on port 1883.
+1572290090: New client connected from 172.17.0.1 as auto-F0114789-DC8D-AF41-3A25-3741A76CA403 (p2, c1, k60).
+1572290090: Client auto-F0114789-DC8D-AF41-3A25-3741A76CA403 disconnected.
+1572290090: New connection from 172.17.0.1 on port 1883.
+1572290090: New client connected from 172.17.0.1 as auto-CAD1F673-21F4-0CE2-3EF2-A2BFCCA71E76 (p2, c1, k60).
+1572290090: Client auto-CAD1F673-21F4-0CE2-3EF2-A2BFCCA71E76 disconnected.
+1572290090: New connection from 172.17.0.1 on port 1883.
+1572290090: New client connected from 172.17.0.1 as auto-EFAA2D3B-2184-AD1D-78A0-22EC08C0F948 (p2, c1, k60).
+1572290090: Client auto-EFAA2D3B-2184-AD1D-78A0-22EC08C0F948 disconnected.
+1572290090: New connection from 172.17.0.1 on port 1883.
+1572290090: New client connected from 172.17.0.1 as auto-26BAEFE3-8044-56D8-C8E5-B316A84D6E16 (p2, c1, k60).
+1572290090: Client auto-26BAEFE3-8044-56D8-C8E5-B316A84D6E16 disconnected.
+1572290090: New connection from 172.17.0.1 on port 1883.
+1572290090: New client connected from 172.17.0.1 as auto-5B093CBA-6D2F-9652-720A-118FFBD3D3BD (p2, c1, k60).
+1572290090: Client auto-5B093CBA-6D2F-9652-720A-118FFBD3D3BD disconnected.
+1572290090: New connection from 172.17.0.1 on port 1883.
+1572290090: New client connected from 172.17.0.1 as auto-92A0A078-D808-9FDE-01B9-C67CED8BDD55 (p2, c1, k60).
+1572290090: Client auto-92A0A078-D808-9FDE-01B9-C67CED8BDD55 disconnected.
+1572290090: New connection from 172.17.0.1 on port 1883.
+1572290090: New client connected from 172.17.0.1 as auto-ADAB87F3-4F16-017B-857F-CCDCBF652F6F (p2, c1, k60).
+1572290090: Client auto-ADAB87F3-4F16-017B-857F-CCDCBF652F6F disconnected.
+1572290090: New connection from 172.17.0.1 on port 1883.
+1572290090: New client connected from 172.17.0.1 as auto-0C75F73B-A016-2CE3-1D7D-EF5F7982961D (p2, c1, k60).
+1572290090: Client auto-0C75F73B-A016-2CE3-1D7D-EF5F7982961D disconnected.
+1572290090: New connection from 172.17.0.1 on port 1883.
+1572290090: New client connected from 172.17.0.1 as auto-7101FCB1-2292-13C2-F7AE-FEAE7C7E6FEF (p2, c1, k60).
+1572290090: Client auto-7101FCB1-2292-13C2-F7AE-FEAE7C7E6FEF disconnected.
+1572290091: New connection from 172.17.0.1 on port 1883.
+1572290091: New client connected from 172.17.0.1 as auto-FD3CB86B-C87A-77DD-F120-40A7D8A33E96 (p2, c1, k60).
+1572290091: Client auto-FD3CB86B-C87A-77DD-F120-40A7D8A33E96 disconnected.
+1572290091: New connection from 172.17.0.1 on port 1883.
+1572290091: New client connected from 172.17.0.1 as auto-EBD62DE0-32B0-C860-7D0D-2B5B0B7D9AEB (p2, c1, k60).
+1572290091: Client auto-EBD62DE0-32B0-C860-7D0D-2B5B0B7D9AEB disconnected.
+1572290091: New connection from 172.17.0.1 on port 1883.
+1572290091: New client connected from 172.17.0.1 as auto-7A342EE4-7AE9-CA91-E168-F69E644B8AFD (p2, c1, k60).
+1572290091: Client auto-7A342EE4-7AE9-CA91-E168-F69E644B8AFD disconnected.
+1572290091: New connection from 172.17.0.1 on port 1883.
+1572290091: New client connected from 172.17.0.1 as auto-1B991D1A-E7B2-683D-9141-AC9157EB3C2B (p2, c1, k60).
+1572290091: Client auto-1B991D1A-E7B2-683D-9141-AC9157EB3C2B disconnected.
+1572290091: New connection from 172.17.0.1 on port 1883.
+1572290091: New client connected from 172.17.0.1 as auto-D8C55076-096E-169E-4522-66F998CEC3BE (p2, c1, k60).
+1572290091: Client auto-D8C55076-096E-169E-4522-66F998CEC3BE disconnected.
+1572290091: New connection from 172.17.0.1 on port 1883.
+1572290091: New client connected from 172.17.0.1 as auto-BF0E708F-B221-962D-D447-6CC84D952068 (p2, c1, k60).
+1572290091: Client auto-BF0E708F-B221-962D-D447-6CC84D952068 disconnected.
+1572290091: New connection from 172.17.0.1 on port 1883.
+1572290091: New client connected from 172.17.0.1 as auto-3E08F336-5AE9-AD89-85D0-2F25BDCF0DA8 (p2, c1, k60).
+1572290091: Client auto-3E08F336-5AE9-AD89-85D0-2F25BDCF0DA8 disconnected.
+1572290091: New connection from 172.17.0.1 on port 1883.
+1572290091: New client connected from 172.17.0.1 as auto-3859FCE0-67A7-083F-2595-287FCC485EBB (p2, c1, k60).
+1572290091: Client auto-3859FCE0-67A7-083F-2595-287FCC485EBB disconnected.
+1572290091: New connection from 172.17.0.1 on port 1883.
+1572290091: New client connected from 172.17.0.1 as auto-1EF7BE75-46A3-B596-1B59-E71C6A05511A (p2, c1, k60).
+1572290091: Client auto-1EF7BE75-46A3-B596-1B59-E71C6A05511A disconnected.
+1572290091: New connection from 172.17.0.1 on port 1883.
+1572290091: New client connected from 172.17.0.1 as auto-AD8A4E5A-DC92-C733-E0E8-3081C226FA94 (p2, c1, k60).
+1572290091: Client auto-AD8A4E5A-DC92-C733-E0E8-3081C226FA94 disconnected.
+1572290092: New connection from 172.17.0.1 on port 1883.
+1572290092: New client connected from 172.17.0.1 as auto-9B5C8A3C-5B9F-D532-60F7-344F3A3D7F71 (p2, c1, k60).
+1572290092: Client auto-9B5C8A3C-5B9F-D532-60F7-344F3A3D7F71 disconnected.
+1572290092: New connection from 172.17.0.1 on port 1883.
+1572290092: New client connected from 172.17.0.1 as auto-66EE58A2-8A70-6AF4-1C62-A235D84BFBA6 (p2, c1, k60).
+1572290092: Client auto-66EE58A2-8A70-6AF4-1C62-A235D84BFBA6 disconnected.
+1572290092: New connection from 172.17.0.1 on port 1883.
+1572290092: New client connected from 172.17.0.1 as auto-AF608508-6996-0E29-E941-DA26609EAFDB (p2, c1, k60).
+1572290092: Client auto-AF608508-6996-0E29-E941-DA26609EAFDB disconnected.
+1572290092: New connection from 172.17.0.1 on port 1883.
+1572290092: New client connected from 172.17.0.1 as auto-0C495AF5-5F3D-C00E-46FA-52ED1316D8FE (p2, c1, k60).
+1572290092: Client auto-0C495AF5-5F3D-C00E-46FA-52ED1316D8FE disconnected.
+1572290092: New connection from 172.17.0.1 on port 1883.
+1572290092: New client connected from 172.17.0.1 as auto-0B510A9A-6448-43A6-BEE0-30371CA0096B (p2, c1, k60).
+1572290092: Client auto-0B510A9A-6448-43A6-BEE0-30371CA0096B disconnected.
+1572290092: New connection from 172.17.0.1 on port 1883.
+1572290092: New client connected from 172.17.0.1 as auto-808DB891-904D-9575-6D6B-3F61F5E0DF30 (p2, c1, k60).
+1572290092: Client auto-808DB891-904D-9575-6D6B-3F61F5E0DF30 disconnected.
+1572290092: New connection from 172.17.0.1 on port 1883.
+1572290092: New client connected from 172.17.0.1 as auto-32591891-7875-53B7-032D-600490996A7C (p2, c1, k60).
+1572290092: Client auto-32591891-7875-53B7-032D-600490996A7C disconnected.
+1572290092: New connection from 172.17.0.1 on port 1883.
+1572290092: New client connected from 172.17.0.1 as auto-719B9C81-BAC0-E263-F22B-17ED5E879986 (p2, c1, k60).
+1572290092: Client auto-719B9C81-BAC0-E263-F22B-17ED5E879986 disconnected.
+1572290092: New connection from 172.17.0.1 on port 1883.
+1572290092: New client connected from 172.17.0.1 as auto-0EB53E26-FC20-FF66-003D-4D3411F052F4 (p2, c1, k60).
+1572290092: Client auto-0EB53E26-FC20-FF66-003D-4D3411F052F4 disconnected.
+1572290093: New connection from 172.17.0.1 on port 1883.
+1572290093: New client connected from 172.17.0.1 as auto-E283D120-4D1C-E16E-13DE-6DF4362ACAAD (p2, c1, k60).
+1572290093: Client auto-E283D120-4D1C-E16E-13DE-6DF4362ACAAD disconnected.
+1572290093: New connection from 172.17.0.1 on port 1883.
+1572290093: New client connected from 172.17.0.1 as auto-0E9BF39E-33BF-0378-C1E3-E812C695EBEC (p2, c1, k60).
+1572290093: Client auto-0E9BF39E-33BF-0378-C1E3-E812C695EBEC disconnected.
+1572290093: New connection from 172.17.0.1 on port 1883.
+1572290093: New client connected from 172.17.0.1 as auto-31019E62-F1E1-67A8-DE0A-C5C5E6AF1269 (p2, c1, k60).
+1572290093: Client auto-31019E62-F1E1-67A8-DE0A-C5C5E6AF1269 disconnected.
+1572290093: New connection from 172.17.0.1 on port 1883.
+1572290093: New client connected from 172.17.0.1 as auto-151A0BEF-A7FB-92D1-6F8F-519011208CE9 (p2, c1, k60).
+1572290093: Client auto-151A0BEF-A7FB-92D1-6F8F-519011208CE9 disconnected.
+1572290093: New connection from 172.17.0.1 on port 1883.
+1572290093: New client connected from 172.17.0.1 as auto-50828EA4-E4C5-9529-3B24-52B696E89CC8 (p2, c1, k60).
+1572290093: Client auto-50828EA4-E4C5-9529-3B24-52B696E89CC8 disconnected.
+1572290093: New connection from 172.17.0.1 on port 1883.
+1572290093: New client connected from 172.17.0.1 as auto-422D382C-7156-A596-5A5E-79490B33DF06 (p2, c1, k60).
+1572290093: Client auto-422D382C-7156-A596-5A5E-79490B33DF06 disconnected.
+1572290093: New connection from 172.17.0.1 on port 1883.
+1572290093: New client connected from 172.17.0.1 as auto-920A832E-5C3F-D184-A8E2-2DC1F8C1B50A (p2, c1, k60).
+1572290093: Client auto-920A832E-5C3F-D184-A8E2-2DC1F8C1B50A disconnected.
+1572290093: New connection from 172.17.0.1 on port 1883.
+1572290093: New client connected from 172.17.0.1 as auto-393A2CBC-CC9B-9F32-61D6-2530FC385446 (p2, c1, k60).
+1572290093: Client auto-393A2CBC-CC9B-9F32-61D6-2530FC385446 disconnected.
+1572290093: New connection from 172.17.0.1 on port 1883.
+1572290093: New client connected from 172.17.0.1 as auto-CD89CB7D-A7F0-57A1-8A82-6A9D84C9E89C (p2, c1, k60).
+1572290093: Client auto-CD89CB7D-A7F0-57A1-8A82-6A9D84C9E89C disconnected.
+1572290162: Socket error on client auto-1478663F-1CDA-BD9B-BE35-E2CE183A6102, disconnecting.
+1572290165: New connection from 172.17.0.1 on port 1883.
+1572290165: New client connected from 172.17.0.1 as auto-5883D53E-5E64-8ADD-4C8B-5DB4C768A17F (p2, c1, k60).
+1572290165: Client auto-5883D53E-5E64-8ADD-4C8B-5DB4C768A17F disconnected.
+1572290165: New connection from 172.17.0.1 on port 1883.
+1572290165: New client connected from 172.17.0.1 as auto-E2EAB0B3-283F-D535-85E6-EDE70AAA697C (p2, c1, k60).
+1572290165: Client auto-E2EAB0B3-283F-D535-85E6-EDE70AAA697C disconnected.
+1572290165: New connection from 172.17.0.1 on port 1883.
+1572290165: New client connected from 172.17.0.1 as auto-3EE36223-74F4-8750-CF53-770B44590393 (p2, c1, k60).
+1572290165: Client auto-3EE36223-74F4-8750-CF53-770B44590393 disconnected.
+1572290165: New connection from 172.17.0.1 on port 1883.
+1572290165: New client connected from 172.17.0.1 as auto-3CC9559C-197A-BF2A-16CC-C44732DB0995 (p2, c1, k60).
+1572290165: Client auto-3CC9559C-197A-BF2A-16CC-C44732DB0995 disconnected.
+1572290166: New connection from 172.17.0.1 on port 1883.
+1572290166: New client connected from 172.17.0.1 as auto-17131824-21BC-D332-6875-C627A1116A39 (p2, c1, k60).
+1572290166: Client auto-17131824-21BC-D332-6875-C627A1116A39 disconnected.
+1572290166: New connection from 172.17.0.1 on port 1883.
+1572290166: New client connected from 172.17.0.1 as auto-CABFE3AC-D039-6752-108B-E8C94C62E775 (p2, c1, k60).
+1572290166: Client auto-CABFE3AC-D039-6752-108B-E8C94C62E775 disconnected.
+1572290166: New connection from 172.17.0.1 on port 1883.
+1572290166: New client connected from 172.17.0.1 as auto-146651BF-8D09-2888-F908-5B80E0D09A4E (p2, c1, k60).
+1572290166: Client auto-146651BF-8D09-2888-F908-5B80E0D09A4E disconnected.
+1572290166: New connection from 172.17.0.1 on port 1883.
+1572290166: New client connected from 172.17.0.1 as auto-A797093B-108E-777E-A739-91A441BDC313 (p2, c1, k60).
+1572290166: Client auto-A797093B-108E-777E-A739-91A441BDC313 disconnected.
+1572290230: New connection from 172.17.0.1 on port 1883.
+1572290230: New client connected from 172.17.0.1 as auto-07ED6FBF-81B8-57A7-262A-3F19F69DC70A (p2, c1, k60).
+1572290230: Socket error on client auto-07ED6FBF-81B8-57A7-262A-3F19F69DC70A, disconnecting.
+1572290230: New connection from 172.17.0.1 on port 1883.
+1572290230: New client connected from 172.17.0.1 as auto-FE895904-0875-977E-345F-1B1D36B6517A (p2, c1, k60).
+1572290237: New connection from 172.17.0.1 on port 1883.
+1572290237: New client connected from 172.17.0.1 as auto-40B11C70-6035-FD0D-4C1A-6901EDADA7AB (p2, c1, k60).
+1572290237: Client auto-40B11C70-6035-FD0D-4C1A-6901EDADA7AB disconnected.
+1572290237: New connection from 172.17.0.1 on port 1883.
+1572290237: New client connected from 172.17.0.1 as auto-BE47D19C-FF9A-D542-06DD-7ACF4E8CE991 (p2, c1, k60).
+1572290237: Client auto-BE47D19C-FF9A-D542-06DD-7ACF4E8CE991 disconnected.
+1572290237: New connection from 172.17.0.1 on port 1883.
+1572290237: New client connected from 172.17.0.1 as auto-9334CB90-06D7-6EFC-245D-9B7BC27B8D1D (p2, c1, k60).
+1572290237: Client auto-9334CB90-06D7-6EFC-245D-9B7BC27B8D1D disconnected.
+1572290238: New connection from 172.17.0.1 on port 1883.
+1572290238: New client connected from 172.17.0.1 as auto-C26008C8-8A4C-12AD-B8EE-F36DE1AC5154 (p2, c1, k60).
+1572290238: Client auto-C26008C8-8A4C-12AD-B8EE-F36DE1AC5154 disconnected.
+1572290238: New connection from 172.17.0.1 on port 1883.
+1572290238: New client connected from 172.17.0.1 as auto-45F67D8B-6EC8-57DF-5C7E-FDFA847551C8 (p2, c1, k60).
+1572290238: Client auto-45F67D8B-6EC8-57DF-5C7E-FDFA847551C8 disconnected.
+1572290238: New connection from 172.17.0.1 on port 1883.
+1572290238: New client connected from 172.17.0.1 as auto-3FB55A85-C88E-5C94-4E12-4D955B2730A8 (p2, c1, k60).
+1572290238: Client auto-3FB55A85-C88E-5C94-4E12-4D955B2730A8 disconnected.
+1572290238: New connection from 172.17.0.1 on port 1883.
+1572290238: New client connected from 172.17.0.1 as auto-CA055796-5401-916D-4695-2639BC7E8B76 (p2, c1, k60).
+1572290238: Client auto-CA055796-5401-916D-4695-2639BC7E8B76 disconnected.
+1572290238: New connection from 172.17.0.1 on port 1883.
+1572290238: New client connected from 172.17.0.1 as auto-46B7E685-4D7C-CCDB-51D8-80FED70B6B6B (p2, c1, k60).
+1572290238: Client auto-46B7E685-4D7C-CCDB-51D8-80FED70B6B6B disconnected.
+1572290238: New connection from 172.17.0.1 on port 1883.
+1572290238: New client connected from 172.17.0.1 as auto-C7BB141E-595C-D789-EBDC-591590CDA4E4 (p2, c1, k60).
+1572290238: Client auto-C7BB141E-595C-D789-EBDC-591590CDA4E4 disconnected.
+1572290238: New connection from 172.17.0.1 on port 1883.
+1572290238: New client connected from 172.17.0.1 as auto-CD1597DE-1437-76F8-E9D2-1017D92239F5 (p2, c1, k60).
+1572290238: Client auto-CD1597DE-1437-76F8-E9D2-1017D92239F5 disconnected.
+1572290238: New connection from 172.17.0.1 on port 1883.
+1572290238: New client connected from 172.17.0.1 as auto-65184888-C2DB-20FF-8AD4-814048769FA5 (p2, c1, k60).
+1572290238: Client auto-65184888-C2DB-20FF-8AD4-814048769FA5 disconnected.
+1572290238: New connection from 172.17.0.1 on port 1883.
+1572290238: New client connected from 172.17.0.1 as auto-8CC5ED51-14F8-540F-F020-EF8D491B0761 (p2, c1, k60).
+1572290238: Client auto-8CC5ED51-14F8-540F-F020-EF8D491B0761 disconnected.
+1572290238: New connection from 172.17.0.1 on port 1883.
+1572290238: New client connected from 172.17.0.1 as auto-9F200B8E-B534-FD19-17D7-7EB6974321A7 (p2, c1, k60).
+1572290238: Client auto-9F200B8E-B534-FD19-17D7-7EB6974321A7 disconnected.
+1572290239: New connection from 172.17.0.1 on port 1883.
+1572290239: New client connected from 172.17.0.1 as auto-317E9B5A-A027-483F-9BED-D7604B2D523C (p2, c1, k60).
+1572290239: Client auto-317E9B5A-A027-483F-9BED-D7604B2D523C disconnected.
+1572290239: New connection from 172.17.0.1 on port 1883.
+1572290239: New client connected from 172.17.0.1 as auto-8A7A8468-91C5-243C-8B8E-A9C64717D02D (p2, c1, k60).
+1572290239: Client auto-8A7A8468-91C5-243C-8B8E-A9C64717D02D disconnected.
+1572290239: New connection from 172.17.0.1 on port 1883.
+1572290239: New client connected from 172.17.0.1 as auto-7B9335B9-9FF1-2FA7-DF45-882D7E3D9EEF (p2, c1, k60).
+1572290239: Client auto-7B9335B9-9FF1-2FA7-DF45-882D7E3D9EEF disconnected.
+1572290239: New connection from 172.17.0.1 on port 1883.
+1572290239: New client connected from 172.17.0.1 as auto-2D62DB35-02C2-A9F1-A303-A2B71EE136FA (p2, c1, k60).
+1572290239: Client auto-2D62DB35-02C2-A9F1-A303-A2B71EE136FA disconnected.
+1572290239: New connection from 172.17.0.1 on port 1883.
+1572290239: New client connected from 172.17.0.1 as auto-74625D3D-8134-2B7E-B56D-1B54916CF450 (p2, c1, k60).
+1572290239: Client auto-74625D3D-8134-2B7E-B56D-1B54916CF450 disconnected.
+1572290239: New connection from 172.17.0.1 on port 1883.
+1572290239: New client connected from 172.17.0.1 as auto-8CF42E4E-C9A9-F3C4-56CF-A682A6355A0A (p2, c1, k60).
+1572290239: Client auto-8CF42E4E-C9A9-F3C4-56CF-A682A6355A0A disconnected.
+1572290239: New connection from 172.17.0.1 on port 1883.
+1572290239: New client connected from 172.17.0.1 as auto-AD216420-A411-26A6-2582-8DE1F5C3478B (p2, c1, k60).
+1572290239: Client auto-AD216420-A411-26A6-2582-8DE1F5C3478B disconnected.
+1572290239: New connection from 172.17.0.1 on port 1883.
+1572290239: New client connected from 172.17.0.1 as auto-FA997F14-A6FE-C4CC-DD51-BC2D2D1992B2 (p2, c1, k60).
+1572290239: Client auto-FA997F14-A6FE-C4CC-DD51-BC2D2D1992B2 disconnected.
+1572290239: New connection from 172.17.0.1 on port 1883.
+1572290239: New client connected from 172.17.0.1 as auto-1CD1F18D-F75B-E7E6-F222-775C33901EAD (p2, c1, k60).
+1572290239: Client auto-1CD1F18D-F75B-E7E6-F222-775C33901EAD disconnected.
+1572290239: New connection from 172.17.0.1 on port 1883.
+1572290239: New client connected from 172.17.0.1 as auto-1777FE1E-E85A-E9EC-A8B3-352C21C0E4A1 (p2, c1, k60).
+1572290239: Client auto-1777FE1E-E85A-E9EC-A8B3-352C21C0E4A1 disconnected.
+1572290240: New connection from 172.17.0.1 on port 1883.
+1572290240: New client connected from 172.17.0.1 as auto-AB36392A-989D-97A3-AECF-D4257E98BB60 (p2, c1, k60).
+1572290240: Client auto-AB36392A-989D-97A3-AECF-D4257E98BB60 disconnected.
+1572290240: New connection from 172.17.0.1 on port 1883.
+1572290240: New client connected from 172.17.0.1 as auto-04571802-C290-B6EE-5015-13DFDC87ECDC (p2, c1, k60).
+1572290240: Client auto-04571802-C290-B6EE-5015-13DFDC87ECDC disconnected.
+1572290240: New connection from 172.17.0.1 on port 1883.
+1572290240: New client connected from 172.17.0.1 as auto-5E406ECA-4386-9192-D34E-2FA8105BA240 (p2, c1, k60).
+1572290240: Client auto-5E406ECA-4386-9192-D34E-2FA8105BA240 disconnected.
+1572290240: New connection from 172.17.0.1 on port 1883.
+1572290240: New client connected from 172.17.0.1 as auto-25EB6D51-A2F8-7398-6BD5-CEB453FEF134 (p2, c1, k60).
+1572290240: Client auto-25EB6D51-A2F8-7398-6BD5-CEB453FEF134 disconnected.
+1572290240: New connection from 172.17.0.1 on port 1883.
+1572290240: New client connected from 172.17.0.1 as auto-EE2BFA0E-E8EC-E3D4-B18C-D8108066E856 (p2, c1, k60).
+1572290240: Client auto-EE2BFA0E-E8EC-E3D4-B18C-D8108066E856 disconnected.
+1572290240: New connection from 172.17.0.1 on port 1883.
+1572290240: New client connected from 172.17.0.1 as auto-5E242896-F4E8-840A-BBAD-2D5D58C4DBBD (p2, c1, k60).
+1572290240: Client auto-5E242896-F4E8-840A-BBAD-2D5D58C4DBBD disconnected.
+1572290240: New connection from 172.17.0.1 on port 1883.
+1572290240: New client connected from 172.17.0.1 as auto-E2AF4059-21D9-7F40-E0E9-994854EC0BAA (p2, c1, k60).
+1572290240: Client auto-E2AF4059-21D9-7F40-E0E9-994854EC0BAA disconnected.
+1572290276: Socket error on client auto-FE895904-0875-977E-345F-1B1D36B6517A, disconnecting.
+1572290284: New connection from 172.17.0.1 on port 1883.
+1572290284: New client connected from 172.17.0.1 as auto-BABA7CB8-3A51-602C-E2A0-779E82AAD0F5 (p2, c1, k60).
+1572290284: Client auto-BABA7CB8-3A51-602C-E2A0-779E82AAD0F5 disconnected.
+1572290284: New connection from 172.17.0.1 on port 1883.
+1572290284: New client connected from 172.17.0.1 as auto-5F4A6242-D55A-0949-48E1-EC5623A78B91 (p2, c1, k60).
+1572290284: Client auto-5F4A6242-D55A-0949-48E1-EC5623A78B91 disconnected.
+1572290284: New connection from 172.17.0.1 on port 1883.
+1572290284: New client connected from 172.17.0.1 as auto-4013E977-95C4-4A2F-E27F-C62755116DFB (p2, c1, k60).
+1572290284: Client auto-4013E977-95C4-4A2F-E27F-C62755116DFB disconnected.
+1572290284: New connection from 172.17.0.1 on port 1883.
+1572290284: New client connected from 172.17.0.1 as auto-98D9911D-DA8B-5436-C623-D27514CDE779 (p2, c1, k60).
+1572290284: Client auto-98D9911D-DA8B-5436-C623-D27514CDE779 disconnected.
+1572290284: New connection from 172.17.0.1 on port 1883.
+1572290284: New client connected from 172.17.0.1 as auto-0EC2CA34-C325-28B8-7D5C-CA5A41038604 (p2, c1, k60).
+1572290284: Client auto-0EC2CA34-C325-28B8-7D5C-CA5A41038604 disconnected.
+1572290284: New connection from 172.17.0.1 on port 1883.
+1572290284: New client connected from 172.17.0.1 as auto-B57D9A1C-9A01-909E-5BCB-FC9C89B34256 (p2, c1, k60).
+1572290284: Client auto-B57D9A1C-9A01-909E-5BCB-FC9C89B34256 disconnected.
+1572290284: New connection from 172.17.0.1 on port 1883.
+1572290284: New client connected from 172.17.0.1 as auto-F653809E-F37E-FD6A-1E00-EE9FCF02BDF4 (p2, c1, k60).
+1572290284: Client auto-F653809E-F37E-FD6A-1E00-EE9FCF02BDF4 disconnected.
+1572290284: New connection from 172.17.0.1 on port 1883.
+1572290284: New client connected from 172.17.0.1 as auto-AD3345F2-B5F2-9FCC-9D56-39E5A4E16A5D (p2, c1, k60).
+1572290284: Client auto-AD3345F2-B5F2-9FCC-9D56-39E5A4E16A5D disconnected.
+1572290284: New connection from 172.17.0.1 on port 1883.
+1572290284: New client connected from 172.17.0.1 as auto-DE4ECDAC-84C2-379F-970D-F9FABC445E16 (p2, c1, k60).
+1572290284: Client auto-DE4ECDAC-84C2-379F-970D-F9FABC445E16 disconnected.
+1572290284: New connection from 172.17.0.1 on port 1883.
+1572290284: New client connected from 172.17.0.1 as auto-2B3E453C-934B-26A4-D83C-9C93A75EECFB (p2, c1, k60).
+1572290284: Client auto-2B3E453C-934B-26A4-D83C-9C93A75EECFB disconnected.
+1572290285: New connection from 172.17.0.1 on port 1883.
+1572290285: New client connected from 172.17.0.1 as auto-B75B1B77-FCCE-5DEF-0A68-59BEDBD08478 (p2, c1, k60).
+1572290285: Client auto-B75B1B77-FCCE-5DEF-0A68-59BEDBD08478 disconnected.
+1572290285: New connection from 172.17.0.1 on port 1883.
+1572290285: New client connected from 172.17.0.1 as auto-548C5123-AA4F-8AD8-8A4E-7DCDDD71B474 (p2, c1, k60).
+1572290285: Client auto-548C5123-AA4F-8AD8-8A4E-7DCDDD71B474 disconnected.
+1572290293: New connection from 172.17.0.1 on port 1883.
+1572290293: New client connected from 172.17.0.1 as auto-ACAD8FAA-7F69-5774-4033-328F91AC8989 (p2, c1, k60).
+1572290293: Socket error on client auto-ACAD8FAA-7F69-5774-4033-328F91AC8989, disconnecting.
+1572290293: New connection from 172.17.0.1 on port 1883.
+1572290293: New client connected from 172.17.0.1 as auto-2D2DCAFB-1E6E-EDAA-A083-E1B18AB0BDDD (p2, c1, k60).
+1572290298: New connection from 172.17.0.1 on port 1883.
+1572290298: New client connected from 172.17.0.1 as auto-C9305FD3-6577-A908-B954-53D430FD6286 (p2, c1, k60).
+1572290298: Client auto-C9305FD3-6577-A908-B954-53D430FD6286 disconnected.
+1572290298: New connection from 172.17.0.1 on port 1883.
+1572290298: New client connected from 172.17.0.1 as auto-431340C8-8A22-E88B-DA16-756236753BCC (p2, c1, k60).
+1572290298: Client auto-431340C8-8A22-E88B-DA16-756236753BCC disconnected.
+1572290298: New connection from 172.17.0.1 on port 1883.
+1572290298: New client connected from 172.17.0.1 as auto-BBC6D54B-DAFD-E38C-0B9A-1189393E8AE9 (p2, c1, k60).
+1572290298: Client auto-BBC6D54B-DAFD-E38C-0B9A-1189393E8AE9 disconnected.
+1572290298: New connection from 172.17.0.1 on port 1883.
+1572290298: New client connected from 172.17.0.1 as auto-775AEBD6-D1F3-7B8D-4BA1-DB5C0D478404 (p2, c1, k60).
+1572290298: Client auto-775AEBD6-D1F3-7B8D-4BA1-DB5C0D478404 disconnected.
+1572290298: New connection from 172.17.0.1 on port 1883.
+1572290298: New client connected from 172.17.0.1 as auto-BD2886A2-12C6-1192-3804-28C7C47CDCFE (p2, c1, k60).
+1572290298: Client auto-BD2886A2-12C6-1192-3804-28C7C47CDCFE disconnected.
+1572290298: New connection from 172.17.0.1 on port 1883.
+1572290298: New client connected from 172.17.0.1 as auto-C83F8E06-1588-F812-044A-792D8FC7E132 (p2, c1, k60).
+1572290298: Client auto-C83F8E06-1588-F812-044A-792D8FC7E132 disconnected.
+1572290298: New connection from 172.17.0.1 on port 1883.
+1572290298: New client connected from 172.17.0.1 as auto-08A4EA5D-2267-F09D-44FE-78CD090A74D9 (p2, c1, k60).
+1572290298: Client auto-08A4EA5D-2267-F09D-44FE-78CD090A74D9 disconnected.
+1572290298: New connection from 172.17.0.1 on port 1883.
+1572290298: New client connected from 172.17.0.1 as auto-B22B28A6-9C72-2982-F2AC-8313539C7163 (p2, c1, k60).
+1572290298: Client auto-B22B28A6-9C72-2982-F2AC-8313539C7163 disconnected.
+1572290298: New connection from 172.17.0.1 on port 1883.
+1572290298: New client connected from 172.17.0.1 as auto-EA827189-EF88-D4AB-D027-FF8E6EF61074 (p2, c1, k60).
+1572290298: Client auto-EA827189-EF88-D4AB-D027-FF8E6EF61074 disconnected.
+1572290299: New connection from 172.17.0.1 on port 1883.
+1572290299: New client connected from 172.17.0.1 as auto-AFDCDF61-9A0A-9733-94E9-00112DF661D3 (p2, c1, k60).
+1572290299: Client auto-AFDCDF61-9A0A-9733-94E9-00112DF661D3 disconnected.
+1572290299: New connection from 172.17.0.1 on port 1883.
+1572290299: New client connected from 172.17.0.1 as auto-0BB9BE75-6DC7-805F-8767-A9AAAF67385B (p2, c1, k60).
+1572290299: Client auto-0BB9BE75-6DC7-805F-8767-A9AAAF67385B disconnected.
+1572290299: New connection from 172.17.0.1 on port 1883.
+1572290299: New client connected from 172.17.0.1 as auto-6F30FAB9-EC9D-AF81-6CA9-5A499B8132E4 (p2, c1, k60).
+1572290299: Client auto-6F30FAB9-EC9D-AF81-6CA9-5A499B8132E4 disconnected.
+1572290299: New connection from 172.17.0.1 on port 1883.
+1572290299: New client connected from 172.17.0.1 as auto-8776BADA-E415-E99C-5409-747810199EB7 (p2, c1, k60).
+1572290299: Client auto-8776BADA-E415-E99C-5409-747810199EB7 disconnected.
+1572290299: New connection from 172.17.0.1 on port 1883.
+1572290299: New client connected from 172.17.0.1 as auto-69252828-1E18-E59B-6A84-1A686F7E7F3E (p2, c1, k60).
+1572290299: Client auto-69252828-1E18-E59B-6A84-1A686F7E7F3E disconnected.
+1572290307: Socket error on client auto-2D2DCAFB-1E6E-EDAA-A083-E1B18AB0BDDD, disconnecting.
+1572291855: mosquitto version 1.6.7 terminating
