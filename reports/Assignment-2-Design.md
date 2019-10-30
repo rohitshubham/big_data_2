@@ -204,24 +204,6 @@ The reason for this format was easy to parse structure. This enum like python li
 
 The reporting is done by sending MQTT publications to `streamingesmanager` via the local Mosquitto broker. The client sends the mqtt report every one minute to streamManager's `reporting_service.py`. (However, only for the sake of quick testing, the interval of reporting time was reduced to 6 seconds temporarily).
 
-The scaling up or down was then by the following logic in `reporting_service.py` code:
-
-```python
-    if avg_processing_time > max_processing_time_threshold:
-        scaleup(client_name)
-    if avg_processing_time < min_processing_time_threshold:
-        scaledown(client_name)
-    if number_of_messages > max_number_of_messages: # we need to scale down in this case as processing rate is too high
-        scaledown(client_name)
-    if number_of_messages < min_number_of_messages:
-        scaleup(client_name) 
-```
-
-    max_processing_time_threshold= 0.05 seconds
-    min_processing_time_threshold= 0.005 seconds
-    max_number_of_messages = 6000000
-    min_number_of_messages = 600000
-
 In case of scaleup, the reporting_service then saves the pid of newly created process in a global variable. In case we need to scale down, it pops the process_id from this global variable and stops it. The start and stop takes place using the commands defined in `StreamIngestManager` subsection of this report.
 
 
@@ -234,9 +216,9 @@ In case of scaleup, the reporting_service then saves the pid of newly created pr
     "name" : "some_data",
     "host_id" : "some_data",
     "host_name" : "some_data",
-    .
-    .
-    .
+    ...
+    ...
+    ...
 }
 ```
 Having a schema like this makes it easy to parse during ingestion and debug the code. This also means an easier dimensionality reduction for analytics. In our implementation, both Client1 and Client2 follow this schema albeit with different values. 
@@ -252,3 +234,85 @@ Having a schema like this makes it easy to parse during ingestion and debug the 
 ---
 
 ## Part 3
+
+#### 1. Integrated architecture:
+
+The integrated architecure would be similar to the lamdba architecture[1], where we can have real-time ingestion as well as batch processing both combined into one. Our `fetchData` and `batch-ingest-manager` would combine to become our batch layer of lambda architecture. It will be an example of connecting pipeline one (fetchdata's file movement) to another pipeline (object storage drivers such as fsGrid) ingestion. 
+
+The Mosquitto message broker along with `stream-ingest-manager` becomes our real-time layer(speed layer). It will allow us to ingest small but quick data (such as IoT sensor data).
+
+#### 2. Micro-batching in our system
+
+In our design, if the file size is more than 10Mb and if the company has enabled micro-batching, the files will be split into sizes of 10Mb each and then moved to staging. This will be done by our `fetch-data` component.
+
+After splitting, the file chunks are moved into the staging folder one by one. The join of the file is then the responsibility of `clientBatchIngestApp`. It will join the chunks and then save the file into the final database. The split and join function can be seen in the respective code files.
+
+Since, many small files are moved, instead of one big file the bandwidth will not be chocked that much. If the movement is across the network, TCP might then be able to work it's congestion control mechanisms.
+
+We have not used broker for transmitting file chunk, instead we have used the batch layer because to keep maintaining the ingestion speed of general stream data. Sending batch files over the broker(even smaller chunks) can slow down the overall ingestion time for real-time data.
+
+#### 3. Code independence:
+
+We should as a platform provider need not look at the code because :
+* Code and ingestion logic of clients many times contain trade secrets and sensitive information. This may drive the customer away if we insist on looking at their code.  
+* With the advent of lightweight containers, it is very easy to isolate the client processes thereby damage from malicious client's code can be prevented to an extent. 
+
+#### 4. Quality of data
+
+If we want to maintain the quality of data, we can start by first enforcing a strict set of constrains on our database. MongoDB supports different types of constrains on a collection, and we can leverage that ensure only data that conforms to certain constrains goes into the database.
+
+Secondly, we can read the binary file to see if the client-scripts are good enough to be run onto the our platform.
+
+Thirdly, we can create an extensive guidelines of our platform  and data ingestion pattern that could provide exact implementation details and send them to the clients. (This would be similar to RFC's that we have for different technologies)
+
+#### 5. Multiple client apps
+
+If the customer has multiple client batching app and/or client streaming apps, we can extend our architecture in the following way:
+
+The `mysimbdp-batchIngestManager` and `mysimbdp-streamIngestManager` both have a direct mapping of fileName with the clientID. IN addition to that we can add the extension information to the mapping data. For example instead of writing  `GetFileName(Client1) = abc.py`, we will have `GetFileName(Client1, typeOfData) = abc_1.py`. 
+
+At the moment, this information is saved as a global variable, but if the size of data types and clients grow, we can use some in-memory database such as `Redis` to store the filename, extentionType and clientID for every client. We can then call `GetFromRedis` to get the value and then execute the file from `subprocess.Popen` as we currently do. ScaleUp and down would work the same way.
+
+
+---
+
+## Bonus Part
+
+### Part 1
+
+The dynamic management of instances has been implemented in the architecure. `reporting_service.py` is the file that listens to the incoming reports from the client apps via Mosquitto.   
+
+
+The scaling up or down was then by the following logic in `reporting_service.py` code:
+
+```python
+    if avg_processing_time > max_processing_time_threshold:
+        scaleup(client_name)
+    if avg_processing_time < min_processing_time_threshold:
+        scaledown(client_name)
+    if number_of_messages > max_number_of_messages: # we need to scale down in this case as processing rate is too high
+        scaledown(client_name)
+    if number_of_messages < min_number_of_messages:
+        scaleup(client_name) 
+```
+The thresholds were 
+
+    max_processing_time_threshold = 0.05 seconds
+    min_processing_time_threshold = 0.005 seconds
+    max_number_of_messages = 6000000
+    min_number_of_messages = 600000
+
+As mentioned earlier, the scale up and down is done by creating/destroying processes in the system. The process id for every client process is stored as a global variable. In a better production environment, we can move this to a in-memory database such as `Redis` or `Memcached`. This would allow easier management of the spawned processes.
+
+### Part 2
+
+The details of implementation micro-batching has been described in answer to part 2 question 3. One good feature of our micro-batching is that it can be enabled on per-client basis. This will allow flexibility of the client to use our platform. 
+
+Our architecture doesn't send the data over the broker, rather the small files are sent over the batch layer `shutil` copier itself.  As mentioned before, sending batch files over the broker(even smaller chunks) can slow down the overall ingestion time for real-time data and can slow down our real-time analytics. So, this was a design-tradeoff that was made to ensure high performance of our real time ingestion.
+
+
+---
+
+References:
+
+[1] http://lambda-architecture.net/
