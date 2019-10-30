@@ -1,4 +1,4 @@
-# Assignment Assignment_2  801636
+# Assignment_2  801636
 
 ## Structure of Assignment
 

@@ -1,2 +1,179 @@
-the content of this file should be the output of the log of your own git project for this assignment
-using git log command to export your git log
+commit b4e3966209deb61237f55920a316104a5eea60a7
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Wed Oct 30 21:23:06 2019 +0200
+
+    Complete other deployment report and cleanup of directories
+
+commit 79781492d622124113366a092c68fb3ef00bb223
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Wed Oct 30 20:43:03 2019 +0200
+
+    Completed the report
+
+commit 78f97080e88288e106b43733314308555a8f600d
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Wed Oct 30 18:01:06 2019 +0200
+
+    second part of report completed
+
+commit 6d7be32c62a919a28f025b5fc2339c7c80b1e666
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Wed Oct 30 15:35:23 2019 +0200
+
+    Updated report for part 2
+
+commit 01194b91d2f6ddb6e8f4dba36869623a368e48b1
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Wed Oct 30 01:13:04 2019 +0200
+
+    Added some images and finished part 1 of writing report.
+
+commit ef61c55a902521217ee1dd3e7a218acf17cb8b8e
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Tue Oct 29 21:56:15 2019 +0200
+
+    Started writing the report
+
+commit 7b8d105c96cdbade24fa21a1ae4db987099f6c38
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Tue Oct 29 00:46:13 2019 +0200
+
+    Added ingestion for company_2
+
+commit 70e2556749b4c288b3b8ab42dabba2b84dcd3245
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Tue Oct 29 00:24:08 2019 +0200
+
+    add the reporting service for aut scaleup and down
+
+commit a220b09485d1ef439274cd55f44143da0e7c8558
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Mon Oct 28 21:46:27 2019 +0200
+
+    Added intial mosquitto logs
+
+commit 3aa355d545c2e6a56b9ee8205a9bbcbbf40f5006
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Mon Oct 28 21:42:55 2019 +0200
+
+    Added reporting facility into company1
+
+commit 965f7b0271c29bc019cd3e82ee0b1fb19e53a683
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Mon Oct 28 21:19:55 2019 +0200
+
+    Implemented streaming manager and company1 test python scripts
+
+commit a91c551294876cd4fac0807d517d93e94c916ffd
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Mon Oct 28 01:51:58 2019 +0200
+
+    added some comments for verbosity into the ingestmanger and clientingestscript files
+
+commit b27a13b1e3d0f287ec7c2fb86f5bdf98fa4b911a
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Mon Oct 28 01:42:14 2019 +0200
+
+    Logging in client_2 and performance tests
+
+commit d1d38057ac1845fa9c457658fe39e7bf2423efa5
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Mon Oct 28 01:07:43 2019 +0200
+
+    Complete client2's test script
+
+commit 7c40c6eb7c6128b9279f6752ccf898a3553d3461
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Mon Oct 28 00:34:00 2019 +0200
+
+    update config parsing capabilities
+
+commit 2106970aaf8b3fdf2e034e1ec278492fd17f78e6
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Sun Oct 27 20:48:11 2019 +0200
+
+    Major bug fixes on clientapps and some performance testing of the client upload into DB
+
+commit e3857882b94a4cd1c5ac85a4aced7e685e95532a
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Sat Oct 26 21:32:56 2019 +0300
+
+    improvent of client1's test code and added some logging
+
+commit eabf5b837fbac183951cdde5b1e9671d883ff3e9
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Sat Oct 26 20:42:23 2019 +0300
+
+    Added old MongoCode and wrote ingestion code for client 1
+
+commit 8d6b4968b8abcb4167b6db33d5fc0a220b26315c
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Sat Oct 26 01:14:46 2019 +0300
+
+    using MQTT for notification to ingestManager.
+
+commit 086d80eb0e54052d24f92279fe01dfefa960c301
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Sat Oct 26 00:13:43 2019 +0300
+
+    Created folder stucture and basic design for batchingesterapp
+
+commit 752251856a576c57576841de0d54dda3b4c615b6
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Fri Oct 25 23:58:15 2019 +0300
+
+    Added some timing data to the log file and fixed a boolean comparision bug
+
+commit 3f965396192c0138eab1f34797a0639d5abc4015
+Author: Rohit Raj <rohit.raj@aalto.fi>
+Date:   Fri Oct 25 23:25:36 2019 +0300
+
+    First commit for part 1 of the assignment. This code can now read the config files and copy the files
+
+commit 09e04b6bd6e03aa114452057682f1b4846ca2db9
+Author: linhsolar <linh.truong@aalto.fi>
+Date:   Mon Oct 7 10:47:36 2019 +0300
+
+    just add empty, free form report files
+
+commit 3a9bfe90cbfb04f7aedc98f8b20df4524a45bc13
+Author: linhsolar <linh.truong@aalto.fi>
+Date:   Wed Sep 18 21:43:48 2019 +0300
+
+    update guideline w.r.t. logs from the git
+
+commit 2339a00270b3d4d23c7f7f2b738f5a7f9aa2c3a2
+Author: linhsolar <linh.truong@aalto.fi>
+Date:   Sun Sep 8 22:27:02 2019 +0300
+
+    update guide
+
+commit 9e8bd269fccdccd2edd7059765afc2f9e2f80c79
+Author: linhsolar <linh.truong@aalto.fi>
+Date:   Sun Sep 8 13:29:13 2019 +0300
+
+    update a bit the guide
+
+commit 5423f13164c1637f17e247c415a8590cfdfd468e
+Author: linhsolar <linh.truong@aalto.fi>
+Date:   Sun Sep 8 13:27:06 2019 +0300
+
+    add new templates
+
+commit d89f35ba5a4d18feccfc78e29e3dd35b70fc92ef
+Author: linhsolar <linh.truong@aalto.fi>
+Date:   Thu Sep 5 21:12:48 2019 +0300
+
+    update guideline
+
+commit 8354163f0cbbf301e550ef7090d4fa86f9059b99
+Author: linhsolar <linh.truong@aalto.fi>
+Date:   Thu Sep 5 21:11:02 2019 +0300
+
+    add template/guideline
+
+commit 7e0b9fbc36f51902e9bd21f2bb97bfdd924b0edd
+Author: Linh Truong <linh.truong@aalto.fi>
+Date:   Thu Sep 5 17:19:38 2019 +0300
+
+    Initial commit
