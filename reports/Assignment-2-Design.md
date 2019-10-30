@@ -116,3 +116,64 @@ The errors are also always accompanied with fileName and call stack as to allow 
 4. 2 test programs were created. One used gridFS object storage and other used collection based storage. Constraints like extension limiting, file name limiting using regex and enabling automatic micro-splitting was profiled in `config.json`. I experienced different types of errors/bugs while ingestion of the app. The errors are mostly at the top of log files, as they were fixed/removed before testing the performance. Performance metrics are shown and compared above.
 
 5. The logging has been implemented for every component(including the client test scripts for stream and batch loading part). They can be seen in the `logs/` folder. The timing, data-size etc, performance metrics can be found in the respective client's log directory.
+
+---
+
+## Part 2 - Stream ingest 
+
+### Design of stream ingest
+
+The stream ingest is responsible for ingestion of streaming data coming from various sources. In our project we are using a message broker for streaming ingest. The design pattern used is `publisher/subscriber` model. In this pattern, the producer of the data publishes(sends the data) to a particular topic. Whereas the consumer of the data subscribes(listens on) to the same topic. The message broker acts as a facilitator between the the publisher and subscriber. 
+
+
+### Mosquitto (mysimbdp-dataBroker) and MQTT
+
+The broker used in our project is `Mosquitto` which is an open-source broker for MQTT protocol. 
+The variant of Mosquitto used was `eclipse-mosquitto`'s docker image. It runs TCP connections on port 1883 and websocket on port 9000. It allows automatic topic creation whenever a publisher or subscriber got attached to the broker. 
+
+* __`MQTT`__ : MQTT stands for Message Queue Telemetry Transport and is a lightweight protocol mainly used for transmission of data in energy-constrained and bandwidth constrained devices especially in Internet of Things(IoT). 
+
+The `mosquitto` broker in our project performs the following actions:
+
+#### 1. Ingestion of streaming data:
+
+Each client has a unique topic on which the client can publish to. The broker is supposed to always keep running and listen on these topics.
+
+On the other end, the `clientIngestApp` is created by the `stream-ingestmanager`.The clientIngestApp is responsible for subscribing to the same topic and saving the file in the database. 
+
+#### 2. Notification to BatchIngestManager
+
+The mosquitto broker also acts notification service backbone for batch ingest. When the fetchData service from the previous component has moved the file to staging, it sends the mqtt notification request to batchIngestManager. The `batchIngestManager` then calls the `clientbatchningestapp` which starts the batch loading of files.
+
+#### 3. Reporting of Metadata from ClientStreamIngestApp to StreamIngestManager
+
+The `ClientStreamIngestApp` also uses the broker, to send the reporting data in a particular format to the `StreamIngestManager`. It sends the report along with the clientName every 60 seconds. The `StreamIngestManager` can then dynamically scale up or down the processes depending on the report.
+
+
+Hence, we can see the that the message broker (`Mosquitto`) forms the backbone of our streaming data as well as the notification and metadata transfers.
+
+### StreamIngestManager
+
+This component is responsible for creating and destroying the instances(processes) of `clientStreamIngestApp`. The `clientingestapp` is called using `subprocess.Popen()` method. This creates a new process for the app instead of thread. The motivation behind this is the same as described in the part-1.
+
+To start a clientStreamIngestApp, we need to use the following command on `mysimbdpstreamingestmanager.py`:
+
+```bash
+
+$ python3  mysimbdpstreamingestmanager.py action_name client_name process_id
+
+```
+
+* action can be : `start`/`stop`
+* client_name: `client1`/`client2`
+* process_id: `0` in case of start. `pid` to stop in case action is `stop` 
+
+Additionally, the stream ingest manager also has a `reporting-service.py` component. This listens to topic `big_data_reporting` on the local mosquitto broker and then scales up and down by calling the `run_command` of the `mysimbdpstreamingestmanager.py`.
+
+### ClientStreamIngestApp
+
+The client stream ingest application is called by the `StreamIngestManager`. Each of these are provided  by the client and are just executed by our manager. They are responsible for ingestion of stream data into the system. 
+
+`Mysimbdp` enforces the `ingestmessagestructure` for all the clients. The structure should be a json dictionary with defined fields ex: `{'item1': 'value', 'item2': 'value2'}`. This is the structure that the client should be broadcasting onto the MQTT and should be saved in the database. 
+
+The clientIngestApp has a unique MQTT topic that it subscribes to and it ingests the streaming data into the mongoDB into the collections(as a key value pair).
