@@ -26,7 +26,7 @@ last_time_sent = 0
 
 #topic-name = "big_data_" + truncate(sha256("company_1"), 5)
 topic = "topic/big_data_c2dcc"
-topic_reporting = "topic/big_data_reporting_c2dcc"
+topic_reporting = "topic/big_data_reporting"
 
 client = mqtt.Client()
 client.connect(broker_url, broker_port)

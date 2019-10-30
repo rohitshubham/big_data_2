@@ -47,7 +47,7 @@ def scaledown(client_name):
 
 
     
-#dies some basic checks and then calls the method to spawn a new process or kill a process
+#does some basic checks and then calls the method to spawn a new process or kill a process
 def scale_up_or_down(client_name, avg_processing_time, number_of_messages):
     if avg_processing_time > max_processing_time_threshold:
         scaleup(client_name)

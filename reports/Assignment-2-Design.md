@@ -156,7 +156,7 @@ Hence, we can see the that the message broker (`Mosquitto`) forms the backbone o
 
 This component is responsible for creating and destroying the instances(processes) of `clientStreamIngestApp`. The `clientingestapp` is called using `subprocess.Popen()` method. This creates a new process for the app instead of thread. The motivation behind this is the same as described in the part-1.
 
-To start a clientStreamIngestApp, we need to use the following command on `mysimbdpstreamingestmanager.py`:
+To *__invoke on-demand__* clientStreamIngestApp, we need to use the following command on `mysimbdpstreamingestmanager.py`:
 
 ```bash
 
@@ -177,3 +177,78 @@ The client stream ingest application is called by the `StreamIngestManager`. Eac
 `Mysimbdp` enforces the `ingestmessagestructure` for all the clients. The structure should be a json dictionary with defined fields ex: `{'item1': 'value', 'item2': 'value2'}`. This is the structure that the client should be broadcasting onto the MQTT and should be saved in the database. 
 
 The clientIngestApp has a unique MQTT topic that it subscribes to and it ingests the streaming data into the mongoDB into the collections(as a key value pair).
+
+#### Performance of clients test scripts:
+
+The client test scripts for both the clients were tested on same system. Following were the results obtained:
+
+![Ingestion_Diagram](./images/stream.png)
+* Table 1 : Average Client stream ingest time
+
+We can see since both the clients were following the same message ingest structure, and both were using the same other software components such as broker and database, the ingestion time is quite similar for both of them.
+
+I did not observe any failure. There were however, some bugs that can been seen on the top of log files. They were fixed during the development process and before the performance test.
+
+#### Reporting format and scaling of client ingest APP:
+
+For the dynamic scaling by the batchstreamingestmanager, we have used the following custom reporting format:
+```json
+[
+    "client_name",
+    "average_processing_time",
+    "total_number_of_messages_ingested",
+    "total_size_of_messages_ingested"
+]
+```
+The reason for this format was easy to parse structure. This enum like python list can be converted from string payload to a python list by single line `eval()` statement.
+
+The reporting is done by sending MQTT publications to `streamingesmanager` via the local Mosquitto broker. The client sends the mqtt report every one minute to streamManager's `reporting_service.py`. (However, only for the sake of quick testing, the interval of reporting time was reduced to 6 seconds temporarily).
+
+The scaling up or down was then by the following logic in `reporting_service.py` code:
+
+```python
+    if avg_processing_time > max_processing_time_threshold:
+        scaleup(client_name)
+    if avg_processing_time < min_processing_time_threshold:
+        scaledown(client_name)
+    if number_of_messages > max_number_of_messages: # we need to scale down in this case as processing rate is too high
+        scaledown(client_name)
+    if number_of_messages < min_number_of_messages:
+        scaleup(client_name) 
+```
+
+    max_processing_time_threshold= 0.05 seconds
+    min_processing_time_threshold= 0.005 seconds
+    max_number_of_messages = 6000000
+    min_number_of_messages = 600000
+
+In case of scaleup, the reporting_service then saves the pid of newly created process in a global variable. In case we need to scale down, it pops the process_id from this global variable and stops it. The start and stop takes place using the commands defined in `StreamIngestManager` subsection of this report.
+
+
+### Specific Answers to part -2 
+
+1. The `ingestmessagestructure` should have a JSON like schema. An example is as follows :
+
+```json
+{  "id" : "some_data",
+    "name" : "some_data",
+    "host_id" : "some_data",
+    "host_name" : "some_data",
+    .
+    .
+    .
+}
+```
+Having a schema like this makes it easy to parse during ingestion and debug the code. This also means an easier dimensionality reduction for analytics. In our implementation, both Client1 and Client2 follow this schema albeit with different values. 
+
+2. `mysimbdp-streamingestmanager` has been implemented and the command to invoke on-demand `clientStreamIngestApp` can be seen in the  `StreamIngestManager` subsection above.
+
+3. `clientstreamingestapp` for 2 customers was also developed. Performance, failures, errors and other details are provided in the subsection above. Logs can be opened to see specific errors.
+
+4. The reporting format was also described in the previous section and the mechanism used for reporting as the MQTT requests on a single topic via the mosquitto broker. `big_data_reporting` was the topic that all the `clientStreamIngestApp`s reported to the `reported_service.py`.
+
+5. The dynamic scaling up and down based on the reporting data by the streamingIngestManager was also __implemented__ and has been described in details in the previous subsection.
+
+---
+
+## Part 3
